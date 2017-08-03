@@ -19,3 +19,6 @@ A Tekken 7 move database. Likely to become a web app when more fully fleshed out
 * A gif of the move
 * A quiz mode, where you see a gif of the move and you have to input the correct frame (dis)advantage
 * Show the most commonly used strings/moves and how fast of a punisher is needed to bop it.
+
+## Acknowledgements
+Moves are from RBNorway.org. JSON-files adapted from Tekken discord bot.
