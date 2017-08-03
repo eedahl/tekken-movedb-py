@@ -1,5 +1,5 @@
 # tekken-movedb-py
-A Tekken 7 move database.
+A Tekken 7 move database. Likely to become a web app when more fully fleshed out.
 
 ## Suggested features
 * Hide/show columns cascade
