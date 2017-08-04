@@ -23,7 +23,6 @@ from pandastable import Table, TableModel
 # TODO(edahl): Show the most commonly used strings/moves and how fast of a punisher is needed to bop it.
 # TODO(edahl): Look into links. SUF < 10+frame (dis)advantage
 # TODO(edahl): Move tracking info, i.e. which direction it tracks
-# TODO(edahl): Clear all filters
 # TODO(edahl): Throw breaks for characters like King
 # TODO(edahl): Improve the legend
 # TODO(edahl): Add an in-game overlay
@@ -37,6 +36,10 @@ from pandastable import Table, TableModel
 df = None
 table = None
 
+#
+move_files = None
+char_names = None
+
 # Column names
 CHAR = 'Character'
 CMD = 'Command'
@@ -47,6 +50,11 @@ HF = 'HF'
 CHF = 'CHF'
 DMG = 'Damage'
 NOTES = 'Notes'
+
+# TODO: Implement
+#       NAME = 'Name'
+#       NICKNAME = 'Pet name'
+#       TOP15 = 'Top 15'
 
 # Filters
 active_characters = dict()
@@ -84,6 +92,12 @@ def char_names_from_filenames(filenames):
 
 
 # TODO(edahl): Make the dump file logic
+def save_movelist():
+    # data = df.to_json(orient='records')
+    for file, char in zip(move_files, char_names):
+        data = df[df[CHAR] == char].to_dict(orient='records')
+        with open('test_' + file, 'w') as outfile:
+            json.dump(data, outfile, indent=4, separators=(',', ': '))
 
 
 def filter_data():
@@ -230,7 +244,11 @@ def make_table_frame(root):
 
 def main():
     # Load moves
+    global move_files
     move_files = os.listdir('./data/')
+
+    global char_names
+    char_names = char_names_from_filenames(move_files)
 
     data = [load_moves_by_filename(x) for x in move_files]
     dfs = [pandas.DataFrame(x) for x in data]
@@ -252,6 +270,8 @@ def main():
     root.config(menu=menu)
     file_menu = Menu(menu)
     menu.add_cascade(label="File", menu=file_menu)
+    file_menu.add_command(label='Save', command=save_movelist)
+    file_menu.add_separator()
     file_menu.add_command(label="Exit", command=lambda: sys.exit(1))
 
     view_menu = Menu(menu)
@@ -304,6 +324,8 @@ def main():
     root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(1))
 
     root.bind_all('<F1>', lambda event=None: open_legend(root))
+
+    root.bind_all('<Control-s>', lambda event=None: save_movelist)
 
     root.mainloop()
 
