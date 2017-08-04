@@ -1,6 +1,13 @@
 # tekken-movedb-py
 A Tekken 7 move database. Likely to become a web app when more fully fleshed out.
 
+## Requirements and how to
+You need a Python distribution installed. I use Anaconda, adding to path when installing. You need two packages: pandas and pandastable.
+
+To install them, use `pip install pandas` and `pip install pandastable`.
+
+To run the program, open a command line in the filter containing it (e.g. `shift+right click` inside the folder to get an option in the drop down) and run with `python tekken-movedb.py`.
+
 ## Suggested features
 * Hide/show columns cascade
 * Improve SUF, HF, BF, CHF filters
@@ -14,7 +21,6 @@ A Tekken 7 move database. Likely to become a web app when more fully fleshed out
 * Add recovery frames
 * Look into links for selected moves SUF < 10+frame (dis)advantage
 * Move tracking info, i.e. which direction it tracks
-* Clear all filters
 * Throw breaks for characters like King
 * A gif of the move
 * A quiz mode, where you see a gif of the move and you have to input the correct frame (dis)advantage
