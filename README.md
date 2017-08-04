@@ -33,4 +33,6 @@ Run from the command line with `python tekken-movedb.py`.
 * Show the most commonly used strings/moves and how fast of a punisher is needed to bop it.
 
 ## Acknowledgements
-Moves are from RBNorway.org. JSON-files adapted from the Tekken discord bot Combot.
+Moves are from RBNorway.org.
+JSON-files adapted from the Tekken discord bot Combot.
+Legend is from Catlord's guide, https://www.gamefaqs.com/ps4/814542-tekken-7/faqs/72021
