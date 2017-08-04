@@ -2,11 +2,17 @@
 A Tekken 7 move database. Likely to become a web app when more fully fleshed out.
 
 ## Requirements and how to
-You need a Python distribution installed. I use Anaconda, adding to path when installing. You need two packages: pandas and pandastable.
+You need a Python distribution installed. I use the Anaconda distribution, adding to path when installing.
 
-To install them, use `pip install pandas` and `pip install pandastable`.
+You can get Anaconda from the following link: https://www.continuum.io/downloads
 
-To run the program, open a command line in the filter containing it (e.g. `shift+right click` inside the folder to get an option in the drop down) and run with `python tekken-movedb.py`.
+You need two packages: pandas and pandastable.
+
+To install them, write `pip install pandas` and `pip install pandastable` in a command line.
+
+To run the program, open a command line in the filter containing it (e.g. `shift+right click` inside the folder to get an option in the drop down).
+
+Run from the command line with `python tekken-movedb.py`.
 
 ## Suggested features
 * Hide/show columns cascade
