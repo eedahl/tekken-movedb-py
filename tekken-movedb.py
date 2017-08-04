@@ -25,6 +25,7 @@ from pandastable import Table, TableModel
 # TODO(edahl): Move tracking info, i.e. which direction it tracks
 # TODO(edahl): Clear all filters
 # TODO(edahl): Throw breaks for characters like King
+# TODO(edahl): Add a legend
 
 
 # #
@@ -62,12 +63,12 @@ def load_moves_by_filename(filename):
         script_dir = os.path.dirname(sys.executable)
     else:
         script_dir = os.path.dirname(os.path.realpath(__file__))
+
     rel_path = './data/' + filename
     file_path = os.path.join(script_dir, rel_path)
 
-    data_file = open(file_path)
-    data = json.load(data_file)
-    data_file.close()
+    with open(file_path, 'r') as data_file:
+        data = json.load(data_file)
 
     return data
 
@@ -81,24 +82,14 @@ def char_names_from_filenames(filenames):
     return [char_name(x) for x in filenames]
 
 
+# TODO(edahl): Make the dump file logic
+
+
 def filter_characters():
     global df
     global table
     table.updateModel(TableModel(df[df[SUF] == '12']))
     table.redraw()
-
-
-# NOTE(edahl): May cause trouble as we begin hiding columns
-def set_column_widths():
-    global table
-    table.model.columnwidths[CMD] = 200
-    table.model.columnwidths[HL] = 70
-    table.model.columnwidths[SUF] = 70
-    table.model.columnwidths[BF] = 70
-    table.model.columnwidths[HF] = 70
-    table.model.columnwidths[CHF] = 70
-    table.model.columnwidths[DMG] = 70
-    table.model.columnwidths[NOTES] = 400
 
 
 def filter_data():
@@ -109,7 +100,7 @@ def filter_data():
     # df.drop(df.columns[[0, 1, 3]], axis=1)
     # df.drop([Column Name or list],inplace=True,axis=1)
 
-    def f(x):
+    def f(x: pandas.core.series.Series):
         suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
         bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
         hf = '(?={0})[^0-9]*'.format(re.escape(hf_filter.get()))
@@ -127,14 +118,110 @@ def filter_data():
 
     tf = df[df[[CHAR, CMD, HL, SUF, BF, HF, CHF]].apply(f, axis=1)]
 
-    temp = table.model.columnwidths
+    tmp_widths = table.model.columnwidths
     table.model = TableModel(tf)
-    table.model.columnwidths = temp
+    table.model.columnwidths = tmp_widths
     table.redraw()
+
+
+def clear_filters():
+    command_filter.set('')
+    hl_filter.set('')
+    suf_filter.set('')
+    bf_filter.set('')
+    hf_filter.set('')
+    chf_filter.set('')
 
 
 def open_legend(root):
     window = Toplevel(root)
+
+
+# NOTE(edahl): May cause trouble as we begin hiding columns
+def set_column_widths():
+    global table
+    table.model.columnwidths[CMD] = 200
+    table.model.columnwidths[HL] = 70
+    table.model.columnwidths[SUF] = 70
+    table.model.columnwidths[BF] = 70
+    table.model.columnwidths[HF] = 70
+    table.model.columnwidths[CHF] = 70
+    table.model.columnwidths[DMG] = 70
+    table.model.columnwidths[NOTES] = 400
+
+
+# TODO(edahl): Maybe put this into a class.
+def make_column_filter_frame(root):
+    column_filters = Frame(root)
+    column_filters.pack(side=TOP, anchor='w')
+
+    global command_filter
+    command_filter = StringVar()
+
+    command_label = Label(column_filters, text="Command")
+    command_label.pack(side=LEFT)
+    command_entry = Entry(column_filters, textvariable=command_filter)
+    command_entry.pack(side=LEFT)
+
+    global hl_filter
+    hl_filter = StringVar()
+
+    hl_label = Label(column_filters, text="Hit levels")
+    hl_label.pack(side=LEFT)
+    hl_entry = Entry(column_filters, textvariable=hl_filter)
+    hl_entry.pack(side=LEFT)
+
+    global suf_filter
+    suf_filter = StringVar()
+
+    suf_label = Label(column_filters, text="Start up frames")
+    suf_label.pack(side=LEFT)
+    suf_entry = Entry(column_filters, textvariable=suf_filter)
+    suf_entry.pack(side=LEFT)
+
+    global bf_filter
+    bf_filter = StringVar()
+
+    bf_label = Label(column_filters, text="Block frames")
+    bf_label.pack(side=LEFT)
+    bf_entry = Entry(column_filters, textvariable=bf_filter)
+    bf_entry.pack(side=LEFT)
+
+    global hf_filter
+    hf_filter = StringVar()
+
+    hf_label = Label(column_filters, text="Hit frames")
+    hf_label.pack(side=LEFT)
+    hf_field = Entry(column_filters, textvariable=hf_filter)
+    hf_field.pack(side=LEFT)
+
+    global chf_filter
+    chf_filter = StringVar()
+
+    chf_label = Label(column_filters, text="CH frames")
+    chf_label.pack(side=LEFT)
+    chf_entry = Entry(column_filters, textvariable=chf_filter)
+    chf_entry.pack(side=LEFT)
+
+    clear_filters_button = Button(column_filters, text="Clear filters", command=clear_filters)
+    clear_filters_button.pack(side=TOP, anchor='w', fill=X, ipadx=30, padx=15, pady=2)
+
+    # Filter button
+    filter_button = Button(column_filters, text="Filter", command=filter_data)
+    filter_button.pack(side=TOP, anchor='w', fill=X, ipadx=30, padx=15, pady=2)
+
+
+def make_table_frame(root):
+    table_frame = Frame(root)
+    table_frame.pack(fill=BOTH, expand=1)
+
+    display_df = df
+
+    global table
+    table = Table(table_frame, fill=BOTH, expand=1, showstatusbar=True, dataframe=display_df)
+    table.show()
+
+    set_column_widths()
 
 
 def main():
@@ -198,76 +285,10 @@ def main():
     Button(character_filters, text='Check all', command=lambda: set_char_buttons(1)).pack(side=TOP, fill=X,
                                                                                           pady=5, anchor='nw')
 
-    # Column filter GUI
-    column_filters = Frame(root)
-    column_filters.pack(side=TOP, anchor='w')
-
-    global command_filter
-    command_filter = StringVar()
-
-    command_label = Label(column_filters, text="Command")
-    command_label.pack(side=LEFT)
-    command_entry = Entry(column_filters, textvariable=command_filter)
-    command_entry.pack(side=LEFT)
-
-    global hl_filter
-    hl_filter = StringVar()
-
-    hl_label = Label(column_filters, text="Hit levels")
-    hl_label.pack(side=LEFT)
-    hl_entry = Entry(column_filters, textvariable=hl_filter)
-    hl_entry.pack(side=LEFT)
-
-    global suf_filter
-    suf_filter = StringVar()
-
-    suf_label = Label(column_filters, text="Start up frames")
-    suf_label.pack(side=LEFT)
-    suf_entry = Entry(column_filters, textvariable=suf_filter)
-    suf_entry.pack(side=LEFT)
-
-    global bf_filter
-    bf_filter = StringVar()
-
-    bf_label = Label(column_filters, text="Block frames")
-    bf_label.pack(side=LEFT)
-    bf_entry = Entry(column_filters, textvariable=bf_filter)
-    bf_entry.pack(side=LEFT)
-
-    global hf_filter
-    hf_filter = StringVar()
-
-    hf_label = Label(column_filters, text="Hit frames")
-    hf_label.pack(side=LEFT)
-    hf_field = Entry(column_filters, textvariable=hf_filter)
-    hf_field.pack(side=LEFT)
-
-    global chf_filter
-    chf_filter = StringVar()
-
-    chf_label = Label(column_filters, text="CH frames")
-    chf_label.pack(side=LEFT)
-    chf_entry = Entry(column_filters, textvariable=chf_filter)
-    chf_entry.pack(side=LEFT)
-
-    # Filter button
-    filter_button = Button(column_filters, text="Filter", command=filter_data)
-    filter_button.pack(side=TOP, anchor='w', ipadx=30, padx=15)
-
-    # Table GUI
-    table_frame = Frame(root)
-    table_frame.pack(fill=BOTH, expand=1)
-
-    display_df = df
-
-    global table
-
-    table = Table(table_frame, fill=BOTH, expand=1, showstatusbar=True, dataframe=display_df)
-
-    table.show()
+    make_column_filter_frame(root)
+    make_table_frame(root)
 
     # Default column widths
-    set_column_widths()
 
     root.mainloop()
 
