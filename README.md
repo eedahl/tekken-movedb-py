@@ -37,4 +37,4 @@ Moves are from RBNorway.org.
 
 JSON-files adapted from the Tekken discord bot Combot.
 
-Legend is from Catlord's guide, https://www.gamefaqs.com/ps4/814542-tekken-7/faqs/72021
+Legend is adapted from Catlord's guide, https://www.gamefaqs.com/ps4/814542-tekken-7/faqs/72021
