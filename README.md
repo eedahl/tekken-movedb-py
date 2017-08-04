@@ -1,6 +1,15 @@
 # tekken-movedb-py
 A Tekken 7 move database. Likely to become a web app when more fully fleshed out.
 
+Keep in mind, this program is *still very much in active development*.
+
+## Features so far
+* Search through multiple characters at once
+* Filter by command, hit levels, start up frames, block frames, hit frames and counter hit frames
+
+## In progress
+* A way to save changes.
+
 ## Requirements and how to
 You need a Python distribution installed. I use the Anaconda distribution, adding to path when installing.
 
