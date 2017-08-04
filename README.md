@@ -21,4 +21,4 @@ A Tekken 7 move database. Likely to become a web app when more fully fleshed out
 * Show the most commonly used strings/moves and how fast of a punisher is needed to bop it.
 
 ## Acknowledgements
-Moves are from RBNorway.org. JSON-files adapted from Tekken discord bot.
+Moves are from RBNorway.org. JSON-files adapted from the Tekken discord bot Combot.
