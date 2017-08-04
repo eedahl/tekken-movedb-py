@@ -79,7 +79,7 @@
     {
         "Character": "Josie",
         "Command": "1, 2, d+4, 4",
-        "Hit level": "h, h, lh",
+        "Hit level": "h, h, l, h",
         "Damage": "7,8,13,25",
         "SUF": "10",
         "BF": "",
@@ -156,7 +156,7 @@
     {
         "Character": "Josie",
         "Command": "2, d+4, 4",
-        "Hit level": "h, lh",
+        "Hit level": "h, l, h",
         "Damage": "8,13,25",
         "SUF": "12",
         "BF": "",
@@ -255,7 +255,7 @@
     {
         "Character": "Josie",
         "Command": "f+2, 3, 4",
-        "Hit level": "h, lh",
+        "Hit level": "h, l, h",
         "Damage": "10,13,20",
         "SUF": "12",
         "BF": "",
@@ -365,7 +365,7 @@
     {
         "Character": "Josie",
         "Command": "d/f+1, 4, 2",
-        "Hit level": "m, lh (TJ)",
+        "Hit level": "m, l, h (TJ)",
         "Damage": "14,12,21",
         "SUF": "16",
         "BF": "",
@@ -486,7 +486,7 @@
     {
         "Character": "Josie",
         "Command": "d+3, 4",
-        "Hit level": "lh, (SWS)",
+        "Hit level": "l, h, (SWS)",
         "Damage": "11,15",
         "SUF": "16",
         "BF": "",

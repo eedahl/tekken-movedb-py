@@ -937,7 +937,7 @@
     {
         "Character": "Nina",
         "Command": "d+2, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "13,20",
         "SUF": "20",
         "BF": "-6?",
@@ -1311,7 +1311,7 @@
     {
         "Character": "Nina",
         "Command": "u/f+4, 3, 4",
-        "Hit level": "h (TJ), lh",
+        "Hit level": "h (TJ), l, h",
         "Damage": "23,10,14",
         "SUF": "18",
         "BF": "-6",

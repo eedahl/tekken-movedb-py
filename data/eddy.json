@@ -101,7 +101,7 @@
     {
         "Character": "Eddy",
         "Command": "3~4",
-        "Hit level": "ll (TC), (RLX)",
+        "Hit level": "l, l (TC), (RLX)",
         "Damage": "13,13",
         "SUF": "28~30,37 (29~)",
         "BF": "-24~-22",
@@ -123,7 +123,7 @@
     {
         "Character": "Eddy",
         "Command": "3~4B",
-        "Hit level": "ll (TC), (HSP)",
+        "Hit level": "l, l (TC), (HSP)",
         "Damage": "13,13",
         "SUF": "28~30,37 (29~)",
         "BF": "-24~-22",
@@ -134,7 +134,7 @@
     {
         "Character": "Eddy",
         "Command": "3~4, 3",
-        "Hit level": "ll (TC), m, (RLX)",
+        "Hit level": "l, l (TC), m, (RLX)",
         "Damage": "13,13,28",
         "SUF": "28~30,37 (29~) RC",
         "BF": "-14~-13",
@@ -145,7 +145,7 @@
     {
         "Character": "Eddy",
         "Command": "3~4, 4",
-        "Hit level": "ll (TC), l (TC)",
+        "Hit level": "l, l (TC), l (TC)",
         "Damage": "13,13,20",
         "SUF": "28~30,37 (29~) RC",
         "BF": "+3",
@@ -156,7 +156,7 @@
     {
         "Character": "Eddy",
         "Command": "3~4, 3+4",
-        "Hit level": "ll (TC), m",
+        "Hit level": "l, l (TC), m",
         "Damage": "13,13,24",
         "SUF": "28~30,37 (29~)",
         "BF": "-17~-12",
@@ -365,7 +365,7 @@
     {
         "Character": "Eddy",
         "Command": "f+4, 3+4",
-        "Hit level": "m, ll (TC), (Special)",
+        "Hit level": "m, l, l (TC), (Special)",
         "Damage": "13,13,13",
         "SUF": "23~24",
         "BF": "-24~-22",
@@ -1476,7 +1476,7 @@
     {
         "Character": "Eddy",
         "Command": "SS 4",
-        "Hit level": "ll (TC)",
+        "Hit level": "l, l (TC)",
         "Damage": "13,9",
         "SUF": "21~22, 33~34 (22~)",
         "BF": "-3~-2",
@@ -1773,7 +1773,7 @@
     {
         "Character": "Eddy",
         "Command": "HSP 2, 4",
-        "Hit level": "m, ll (TC)",
+        "Hit level": "m, l, l (TC)",
         "Damage": "13,13,9",
         "SUF": "16~17",
         "BF": "-3~-2",
@@ -1795,7 +1795,7 @@
     {
         "Character": "Eddy",
         "Command": "HSP 3~4",
-        "Hit level": "ll (TC), (RLX)",
+        "Hit level": "l, l (TC), (RLX)",
         "Damage": "13,13",
         "SUF": "25,34 (26~)",
         "BF": "-24",
@@ -1806,7 +1806,7 @@
     {
         "Character": "Eddy",
         "Command": "HSP 3~4B",
-        "Hit level": "ll (TC), (HSP)",
+        "Hit level": "l, l (TC), (HSP)",
         "Damage": "13,13",
         "SUF": "25,34 (26~)",
         "BF": "-24",
@@ -1828,7 +1828,7 @@
     {
         "Character": "Eddy",
         "Command": "HSP 4, 3+4",
-        "Hit level": "m, h, ll (TC), (RLX)",
+        "Hit level": "m, h, l, l (TC), (RLX)",
         "Damage": "13,16,13,13",
         "SUF": "10~13, 17~19",
         "BF": "-24",
@@ -2125,7 +2125,7 @@
     {
         "Character": "Eddy",
         "Command": "RLX 4~3",
-        "Hit level": "ll (TC), (HSP)",
+        "Hit level": "l, l (TC), (HSP)",
         "Damage": "9,10",
         "SUF": "15,42 Air (16~)",
         "BF": "-1",
@@ -2136,7 +2136,7 @@
     {
         "Character": "Eddy",
         "Command": "RLX 4~3 3+4",
-        "Hit level": "ll (TC), ll (TC), (RLX)",
+        "Hit level": "l, l (TC), l, l (TC), (RLX)",
         "Damage": "9,10,13,13",
         "SUF": "15,42 (16~)",
         "BF": "-24",
@@ -2741,7 +2741,7 @@
     {
         "Character": "Eddy",
         "Command": "SS 4",
-        "Hit level": "ll (TC)",
+        "Hit level": "l, l (TC)",
         "Damage": "13,9",
         "SUF": "21~22, 33~34 (22~)",
         "BF": "-3~-2",

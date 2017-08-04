@@ -376,7 +376,7 @@
     {
         "Character": "Lars",
         "Command": "d+3, 1",
-        "Hit level": "lh, h",
+        "Hit level": "l, h, h",
         "Damage": "10,5,13",
         "SUF": "15",
         "BF": "-7",
@@ -728,7 +728,7 @@
     {
         "Character": "Lars",
         "Command": "f, F+3+4",
-        "Hit level": "ll",
+        "Hit level": "l, l",
         "Damage": "14,20",
         "SUF": "19,29 (20~)",
         "BF": "-16",
@@ -849,7 +849,7 @@
     {
         "Character": "Lars",
         "Command": "FC+d/f+1+2",
-        "Hit level": "ll",
+        "Hit level": "l, l",
         "Damage": "13,13",
         "SUF": "18,31",
         "BF": "-12",

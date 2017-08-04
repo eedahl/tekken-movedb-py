@@ -519,7 +519,7 @@
     {
         "Character": "Dragunov",
         "Command": "d+4, 1",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "12,8",
         "SUF": "15",
         "BF": "-11",
@@ -530,7 +530,7 @@
     {
         "Character": "Dragunov",
         "Command": "d+4, 1, 3",
-        "Hit level": "lh, h",
+        "Hit level": "l, h, h",
         "Damage": "12,8,21",
         "SUF": "15",
         "BF": "-15?",
@@ -541,7 +541,7 @@
     {
         "Character": "Dragunov",
         "Command": "d+4, 4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "12,23",
         "SUF": "15",
         "BF": "-15",

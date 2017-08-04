@@ -596,7 +596,7 @@
     {
         "Character": "Bryan",
         "Command": "d+3, 2",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "13,29",
         "SUF": "16",
         "BF": "-7",

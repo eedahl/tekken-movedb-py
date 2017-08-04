@@ -365,7 +365,7 @@
     {
         "Character": "Claudio",
         "Command": "d/b+4, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "",
         "SUF": "15?",
         "BF": "-9",

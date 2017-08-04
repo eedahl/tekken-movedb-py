@@ -497,7 +497,7 @@
     {
         "Character": "Katarina",
         "Command": "d+3, 4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "12,18",
         "SUF": "16",
         "BF": "-4",

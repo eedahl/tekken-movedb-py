@@ -409,7 +409,7 @@
     {
         "Character": "Lucky Chloe",
         "Command": "d+3+4",
-        "Hit level": "lll",
+        "Hit level": "l, l, l",
         "Damage": "10,5,5",
         "SUF": "23,24sa",
         "BF": "-13",
@@ -420,7 +420,7 @@
     {
         "Character": "Lucky Chloe",
         "Command": "d+3+4, 3+4",
-        "Hit level": "lll, ll",
+        "Hit level": "l, l, l, l, l",
         "Damage": "",
         "SUF": "23,24s",
         "BF": "-13",
@@ -431,7 +431,7 @@
     {
         "Character": "Lucky Chloe",
         "Command": "d+3+4:d+3+4",
-        "Hit level": "lllh, m, l",
+        "Hit level": "l, l, l, h, m, l",
         "Damage": "",
         "SUF": "23,24ba",
         "BF": "-30?~",
@@ -442,7 +442,7 @@
     {
         "Character": "Lucky Chloe",
         "Command": "d+3+4:d+3+4, F",
-        "Hit level": "lllh, m, l",
+        "Hit level": "l, l, l, h, m, l",
         "Damage": "",
         "SUF": "23,24a",
         "BF": "",
@@ -453,7 +453,7 @@
     {
         "Character": "Lucky Chloe",
         "Command": "d+3+4:d+3+4, F:3+4",
-        "Hit level": "lllh, m, lm (TJ)",
+        "Hit level": "l, l, l, h, m, lm (TJ)",
         "Damage": "",
         "SUF": "23,24",
         "BF": "-9~",

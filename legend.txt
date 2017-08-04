@@ -1,0 +1,67 @@
+Buttons and movement:
+1 - Left punch                 2 - Right punch
+3 - Left kick                  4 - Right kick
+b - tap backwards once         d/b - tap down/back once
+d - tap down once              u/f - tap up/forward once
+u - tap up once                u/b - tap up/back once
+F - hold forward               D/F - hold down/forward
+B - hold back                  D/B - hold down/back
+D - hold down                  U/F - hold up/forward
+U - hold up                    U/B - hold up/back
+N   - Neutral position (no directional input)
+SS  - Short sidestep (u,N or d,N)
+QCF - Quarter circle forward (d, d/f, f)
+QCB - Quarter circle back (d, d/b, b)
+HCF - Half circle forward (b, d/b, d, d/f, f)
+HCB - Half circle back (f, d/f, d, d/b, b)
+
+Linking conventions:
++ - Moves must be done together
+, - Moves must be done right after the other
+~ - Moves must be done IMMEDIATELY after the other
+_ - Or (When used between two moves, they are interchangeable)
+> - Move following the > has the option of being slightly delayed
+: - Move Following the : has to be precision timed to execute (Just Frame)
+# - Hold movement before '#' until the end of string, or until N (Neutral)
+FC - Do move while in a fully-crouched position
+WS - Do move While standing up (Returning the stick to neutral from a crouch)
+WR - While running (f,f,f or f,F#)
+BT - Back is turned towards opponent
+FD/FT - Lying on the ground Face Down / Feet Towards opponent
+FD/FA -   "           "     Face Down / Feet Away from opponent
+FU/FT -   "           "     Face Up / Feet Towards opponent
+FU/FA -   "           "     Face Up / Feet Away from opponent
+CH - Counter Hit (Hit your opponent in the middle of their move execution)
+Clean Hit - (Hitting your opponent from a very close range)
+[] - Brackets surrounding an item indicate an optional move
+() - Indicates a stance name (or groups moves together for easier reading)
+. - Pause 1/3 a second between button presses (Tenstring timings only)
+
+Attack heights
+h   - Move hits high (can be ducked)
+m   - Move hits mid (must stand to block - will hit if you are crouching)
+M   - Move hits mid, and also will hit a grounded opponent
+Sm  - Move hits special-mid  (can be blocked either standing or crouching)
+l   - Move hits low (must crouch to block - will hit if you are standing)
+L   - Move hits low, and also will hit a grounded opponent
+UB  - Move is unblockable (cannot be blocked)
+UBH - Move is unblockable, but hits high and can be evaded by crouching
+
+Additional coventions:
+s    - Opponent recovers crouching
+KND  - Opponent is knocked down
+g    - Guard break (opponent can block, but not attack)
+JG   - Move knocks opponent into the air, allowing for additional hits
+JGc  - Move juggles only on a Counter-Hit
+ST   - Move stuns opponent, providing attack advantage or additional hits
+STc  - Move stuns only on a Counter-Hit
+AW   - Move must be done with your back against a wall
+H    - Move has homing properties, and will track a sidestepping opponent.
+#    - Refer to the corresponding Comment # at the end of the character list.
+S!   - MOVE TAILSPINS AIRBORNE OPPONENT, ALLOWING FOR AN EXTENDED JUGGLE
+SS!  - MOVE TAILSPINS STANDING OPPONENT
+SS!c - MOVE TAILSPINS STANDING OPPONENT ON COUNTER-HIT
+RA   - MOVE PERFORMS RAGE ART COMBO WHEN IN RAGE MODE (LOW ON HEALTH)
+RD   - MOVE PERFORMS RAGE DRIVE ATTACK WHEN IN RAGE MODE (LOW ON HEALTH)
+PC   - MOVE POWER CRUSHES, WHERE ATTACK EXECUTION IGNORES INCOMING ATTACKS
+EX   - MOVE REQUIRES # OF EX-METERS TO PERFORM (FOR AKUMA AND ELIZA)

@@ -1586,7 +1586,7 @@
     {
         "Character": "Master Raven",
         "Command": "BT f+4, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "9,21",
         "SUF": "16",
         "BF": "-13",

@@ -497,7 +497,7 @@
     {
         "Character": "Miguel",
         "Command": "d+4, 1+2",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "13,27",
         "SUF": "16",
         "BF": "-8 OC",
@@ -508,7 +508,7 @@
     {
         "Character": "Miguel",
         "Command": "d+4, 1+2, f",
-        "Hit level": "lh, (SAV)",
+        "Hit level": "l, h, (SAV)",
         "Damage": "13,27",
         "SUF": "16",
         "BF": "-8 OC",

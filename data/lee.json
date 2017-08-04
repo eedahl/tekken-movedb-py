@@ -706,7 +706,7 @@
     {
         "Character": "Lee",
         "Command": "d+4, n+4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "9,21",
         "SUF": "12",
         "BF": "-9",
@@ -717,7 +717,7 @@
     {
         "Character": "Lee",
         "Command": "d+4, n+4~3j",
-        "Hit level": "lh! (TJ)",
+        "Hit level": "l, h! (TJ)",
         "Damage": "9,108",
         "SUF": "12",
         "BF": "KND",
@@ -1003,7 +1003,7 @@
     {
         "Character": "Lee",
         "Command": "b+3, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "",
         "SUF": "14~15",
         "BF": "",
@@ -1014,7 +1014,7 @@
     {
         "Character": "Lee",
         "Command": "b+3, 3, f",
-        "Hit level": "lh, (MS)",
+        "Hit level": "l, h, (MS)",
         "Damage": "",
         "SUF": "14~15",
         "BF": "",

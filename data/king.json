@@ -376,7 +376,7 @@
     {
         "Character": "King",
         "Command": "d/f+4, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "13,14",
         "SUF": "14",
         "BF": "-5",
@@ -387,7 +387,7 @@
     {
         "Character": "King",
         "Command": "d/f+4, 3, 4",
-        "Hit level": "lh, m (TJ)",
+        "Hit level": "l, h, m (TJ)",
         "Damage": "13,14,36",
         "SUF": "14",
         "BF": "-15",
@@ -398,7 +398,7 @@
     {
         "Character": "King",
         "Command": "d/f+4, 3, 4, B",
-        "Hit level": "lh, m (TJ)",
+        "Hit level": "l, h, m (TJ)",
         "Damage": "13,14,36",
         "SUF": "14 RBT",
         "BF": "-8",
@@ -409,7 +409,7 @@
     {
         "Character": "King",
         "Command": "d/f+4, 3, d/b or d+4",
-        "Hit level": "lh, l (TJ)",
+        "Hit level": "l, h, l (TJ)",
         "Damage": "13,14,21",
         "SUF": "14 RC( RG)",
         "BF": "-13",

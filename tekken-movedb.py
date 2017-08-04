@@ -25,7 +25,8 @@ from pandastable import Table, TableModel
 # TODO(edahl): Move tracking info, i.e. which direction it tracks
 # TODO(edahl): Clear all filters
 # TODO(edahl): Throw breaks for characters like King
-# TODO(edahl): Add a legend
+# TODO(edahl): Improve the legend
+# TODO(edahl): Add an in-game overlay
 
 
 # #
@@ -128,6 +129,18 @@ def clear_filters():
 
 def open_legend(root):
     window = Toplevel(root)
+
+    if getattr(sys, 'frozen', False):
+        script_dir = os.path.dirname(sys.executable)
+    else:
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+
+    file_path = os.path.join(script_dir, 'legend.txt')
+
+    with open(file_path, 'r') as legend_file:
+        legend = legend_file.read()
+
+    Message(window, text=legend, font='Consolas', padx=10, pady=10).pack()
 
 
 # TODO(edahl): Maybe put this into a class.
@@ -245,7 +258,7 @@ def main():
     menu.add_cascade(label="View", menu=view_menu)
 
     for col in cols:
-        view_menu.add_checkbutton(label='Hide ' + col)
+        view_menu.add_checkbutton(label='Hide ' + col, state=DISABLED)
     # add_command(label="Hide column")
 
     help_menu = Menu(menu)
@@ -282,8 +295,10 @@ def main():
     make_table_frame(root)
 
     # Binds
+    root.bind_all('<Alt-i>', lambda event=None: filter_data())
     root.bind_all('<Alt-l>', lambda event=None: clear_filters())
     root.bind_all('<Alt-i>', lambda event=None: filter_data())
+    root.bind_all('<Return>', lambda event=None: filter_data())
 
     root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(0))
     root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(1))

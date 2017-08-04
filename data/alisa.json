@@ -541,7 +541,7 @@
     {
         "Character": "Alisa",
         "Command": "d+4, 1+2",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "15,20",
         "SUF": "17",
         "BF": "-1~0",
@@ -1234,7 +1234,7 @@
     {
         "Character": "Alisa",
         "Command": "FC+d/f+1+2",
-        "Hit level": "ll",
+        "Hit level": "l, l",
         "Damage": "10,16",
         "SUF": "23,33~34",
         "BF": "-11~-10",
@@ -1245,7 +1245,7 @@
     {
         "Character": "Alisa",
         "Command": "FC+d/f+1+2 , 1+2",
-        "Hit level": "ll, (DES)",
+        "Hit level": "l, l, (DES)",
         "Damage": "10,16",
         "SUF": "23,33~34",
         "BF": "-11~-10",
@@ -1267,7 +1267,7 @@
     {
         "Character": "Alisa",
         "Command": "SS+4 , 1+2",
-        "Hit level": "lh x 3 (TJ), m (TJ)",
+        "Hit level": "l, h x 3 (TJ), m (TJ)",
         "Damage": "15,5*4",
         "SUF": "24(33~)",
         "BF": "-10",
@@ -1685,7 +1685,7 @@
     {
         "Character": "Alisa",
         "Command": "DES d+2",
-        "Hit level": "llll",
+        "Hit level": "l, l, l, l",
         "Damage": "5*4",
         "SUF": "30",
         "BF": "-14~-13",

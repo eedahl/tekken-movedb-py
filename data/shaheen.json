@@ -211,7 +211,7 @@
     {
         "Character": "Shaheen",
         "Command": "f+2, 4, 4",
-        "Hit level": "h, lh",
+        "Hit level": "h, l, h",
         "Damage": "12,13,21",
         "SUF": "12",
         "BF": "-3",
@@ -442,7 +442,7 @@
     {
         "Character": "Shaheen",
         "Command": "d/b+3, 4",
-        "Hit level": "lh?",
+        "Hit level": "l, h?",
         "Damage": "15,30",
         "SUF": "20",
         "BF": "-13",

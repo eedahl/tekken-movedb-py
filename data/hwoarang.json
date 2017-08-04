@@ -46,7 +46,7 @@
     {
         "Character": "Hwoarang",
         "Command": "1, 1, 3, 3",
-        "Hit level": "h, h, lh",
+        "Hit level": "h, h, l, h",
         "Damage": "9,10,13,24",
         "SUF": "10",
         "BF": "-15",
@@ -552,7 +552,7 @@
     {
         "Character": "Hwoarang",
         "Command": "d+3, 4",
-        "Hit level": "lh, (RFS)",
+        "Hit level": "l, h, (RFS)",
         "Damage": "9,13",
         "SUF": "17",
         "BF": "+8~+10",
@@ -640,7 +640,7 @@
     {
         "Character": "Hwoarang",
         "Command": "d/b+4, 4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "16,28",
         "SUF": "16",
         "BF": "-2",
@@ -1520,7 +1520,7 @@
     {
         "Character": "Hwoarang",
         "Command": "RFF d/b+3, 3",
-        "Hit level": "lh(LFF)",
+        "Hit level": "l, h(LFF)",
         "Damage": "20,54",
         "SUF": "17",
         "BF": "-2 OS",
@@ -1850,7 +1850,7 @@
     {
         "Character": "Hwoarang",
         "Command": "LFS d+3, 4",
-        "Hit level": "lh, (RFS)",
+        "Hit level": "l, h, (RFS)",
         "Damage": "9,13",
         "SUF": "16",
         "BF": "+8~+10",

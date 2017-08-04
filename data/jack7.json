@@ -409,7 +409,7 @@
     {
         "Character": "Jack7",
         "Command": "d/f+1+2",
-        "Hit level": "ll",
+        "Hit level": "l, l",
         "Damage": "8,21",
         "SUF": "18,30",
         "BF": "-70",

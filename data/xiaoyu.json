@@ -1564,7 +1564,7 @@
     {
         "Character": "Xiaoyu",
         "Command": "RDS d+3, 4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "10,20",
         "SUF": "16",
         "BF": "-5",

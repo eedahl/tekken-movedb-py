@@ -442,7 +442,7 @@
     {
         "Character": "Bob",
         "Command": "d/f+3, 4, 4",
-        "Hit level": "m, lh",
+        "Hit level": "m, l, h",
         "Damage": "14,10,16",
         "SUF": "18",
         "BF": "-13",
@@ -563,7 +563,7 @@
     {
         "Character": "Bob",
         "Command": "d+3, 4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "14,20",
         "SUF": "19",
         "BF": "-10",
@@ -585,7 +585,7 @@
     {
         "Character": "Bob",
         "Command": "d+4, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "11,15",
         "SUF": "16",
         "BF": "-7",
@@ -596,7 +596,7 @@
     {
         "Character": "Bob",
         "Command": "d+4, 3, 4",
-        "Hit level": "lh, m",
+        "Hit level": "l, h, m",
         "Damage": "11,15,24",
         "SUF": "16",
         "BF": "-12",
@@ -1113,7 +1113,7 @@
     {
         "Character": "Bob",
         "Command": "u/f+3+4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "10,12",
         "SUF": "21,31",
         "BF": "-15(-25s)",
@@ -1124,7 +1124,7 @@
     {
         "Character": "Bob",
         "Command": "u/f+3+4, 4",
-        "Hit level": "lh, h (TJ)",
+        "Hit level": "l, h, h (TJ)",
         "Damage": "10,12,20",
         "SUF": "21,31",
         "BF": "-4",

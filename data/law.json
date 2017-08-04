@@ -508,7 +508,7 @@
     {
         "Character": "Law",
         "Command": "d/f+3, 3, 3",
-        "Hit level": "m, lh",
+        "Hit level": "m, l, h",
         "Damage": "24,10,18",
         "SUF": "17",
         "BF": "-8",
@@ -629,7 +629,7 @@
     {
         "Character": "Law",
         "Command": "d+3, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "10,22",
         "SUF": "16",
         "BF": "-7",
@@ -651,7 +651,7 @@
     {
         "Character": "Law",
         "Command": "d+4, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "9,13",
         "SUF": "15a",
         "BF": "-12",
@@ -750,7 +750,7 @@
     {
         "Character": "Law",
         "Command": "in rage d/b+4, 3+4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "",
         "SUF": "24",
         "BF": "-11?",

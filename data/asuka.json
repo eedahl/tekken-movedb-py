@@ -266,7 +266,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "6,10",
         "SUF": "14,31",
         "BF": "-2(-19 OC)",
@@ -277,7 +277,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4, 2",
-        "Hit level": "lh, h",
+        "Hit level": "l, h, h",
         "Damage": "6,10,13",
         "SUF": "14,31",
         "BF": "-2",
@@ -288,7 +288,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4, 3",
-        "Hit level": "lh, m",
+        "Hit level": "l, h, m",
         "Damage": "6,10,40",
         "SUF": "14,31",
         "BF": "-2~-1",
@@ -299,7 +299,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4, 3, b (Cancel)",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "6,10",
         "SUF": "14,31",
         "BF": "-21",
@@ -310,7 +310,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4, 2, 4",
-        "Hit level": "lh, h, m",
+        "Hit level": "l, h, h, m",
         "Damage": "6,10,13,31",
         "SUF": "14,31",
         "BF": "-9?",
@@ -321,7 +321,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4, 2, d+4",
-        "Hit level": "lh, h, l",
+        "Hit level": "l, h, h, l",
         "Damage": "6,10,13,24",
         "SUF": "14,31",
         "BF": "-23",
@@ -332,7 +332,7 @@
     {
         "Character": "Asuka",
         "Command": "1+4, 2, 1",
-        "Hit level": "lh, h, h",
+        "Hit level": "l, h, h, h",
         "Damage": "6,10,13,16",
         "SUF": "14,31",
         "BF": "-3",
@@ -508,7 +508,7 @@
     {
         "Character": "Asuka",
         "Command": "d+3+4",
-        "Hit level": "lh (TJ)",
+        "Hit level": "l, h (TJ)",
         "Damage": "6,27",
         "SUF": "14,24",
         "BF": "-6(-25 OC)",
@@ -1146,7 +1146,7 @@
     {
         "Character": "Asuka",
         "Command": "f+1, 4",
-        "Hit level": "m, lh (TJ)",
+        "Hit level": "m, l, h (TJ)",
         "Damage": "22,6,27",
         "SUF": "20",
         "BF": "-6(-25 OC)",
@@ -1245,7 +1245,7 @@
     {
         "Character": "Asuka",
         "Command": "d/b+4, 3",
-        "Hit level": "lh",
+        "Hit level": "l, h",
         "Damage": "18,28",
         "SUF": "22",
         "BF": "-3",
@@ -1256,7 +1256,7 @@
     {
         "Character": "Asuka",
         "Command": "d/b+4, 1+4",
-        "Hit level": "l (TC), lh",
+        "Hit level": "l (TC), l, h",
         "Damage": "18,6,10",
         "SUF": "22",
         "BF": "-2(-19 OC)",
