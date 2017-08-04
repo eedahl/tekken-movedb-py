@@ -85,13 +85,6 @@ def char_names_from_filenames(filenames):
 # TODO(edahl): Make the dump file logic
 
 
-def filter_characters():
-    global df
-    global table
-    table.updateModel(TableModel(df[df[SUF] == '12']))
-    table.redraw()
-
-
 def filter_data():
     global df
     global table
@@ -137,23 +130,13 @@ def open_legend(root):
     window = Toplevel(root)
 
 
-# NOTE(edahl): May cause trouble as we begin hiding columns
-def set_column_widths():
-    global table
-    table.model.columnwidths[CMD] = 200
-    table.model.columnwidths[HL] = 70
-    table.model.columnwidths[SUF] = 70
-    table.model.columnwidths[BF] = 70
-    table.model.columnwidths[HF] = 70
-    table.model.columnwidths[CHF] = 70
-    table.model.columnwidths[DMG] = 70
-    table.model.columnwidths[NOTES] = 400
-
-
 # TODO(edahl): Maybe put this into a class.
 def make_column_filter_frame(root):
     column_filters = Frame(root)
     column_filters.pack(side=TOP, anchor='w')
+
+    # TODO(edahl): Fix Return filter shortcut
+    # column_filters.bind("<Return>", filter_data)
 
     global command_filter
     command_filter = StringVar()
@@ -203,11 +186,11 @@ def make_column_filter_frame(root):
     chf_entry = Entry(column_filters, textvariable=chf_filter)
     chf_entry.pack(side=LEFT)
 
-    clear_filters_button = Button(column_filters, text="Clear filters", command=clear_filters)
+    clear_filters_button = Button(column_filters, text="Clear filters", underline=1, command=clear_filters)
     clear_filters_button.pack(side=TOP, anchor='w', fill=X, ipadx=30, padx=15, pady=2)
 
     # Filter button
-    filter_button = Button(column_filters, text="Filter", command=filter_data)
+    filter_button = Button(column_filters, text="Filter", underline=1, command=filter_data)
     filter_button.pack(side=TOP, anchor='w', fill=X, ipadx=30, padx=15, pady=2)
 
 
@@ -221,7 +204,15 @@ def make_table_frame(root):
     table = Table(table_frame, fill=BOTH, expand=1, showstatusbar=True, dataframe=display_df)
     table.show()
 
-    set_column_widths()
+    # NOTE(edahl): May cause trouble as we begin hiding columns
+    table.model.columnwidths[CMD] = 200
+    table.model.columnwidths[HL] = 70
+    table.model.columnwidths[SUF] = 70
+    table.model.columnwidths[BF] = 70
+    table.model.columnwidths[HF] = 70
+    table.model.columnwidths[CHF] = 70
+    table.model.columnwidths[DMG] = 70
+    table.model.columnwidths[NOTES] = 400
 
 
 def main():
@@ -254,8 +245,8 @@ def main():
     menu.add_cascade(label="View", menu=view_menu)
 
     for col in cols:
-        view_menu.add_checkbutton(label='Hide '+col)
-    #add_command(label="Hide column")
+        view_menu.add_checkbutton(label='Hide ' + col)
+    # add_command(label="Hide column")
 
     help_menu = Menu(menu)
     menu.add_cascade(label="Help", menu=help_menu)
@@ -280,15 +271,24 @@ def main():
         for x in active_characters.values():
             x.set(val)
 
-    Button(character_filters, text='Clear all', command=lambda: set_char_buttons(0)).pack(side=TOP, fill=X,
-                                                                                          pady=5, anchor='nw')
-    Button(character_filters, text='Check all', command=lambda: set_char_buttons(1)).pack(side=TOP, fill=X,
-                                                                                          pady=5, anchor='nw')
+    Button(character_filters, text='Clear all', underline=3, command=lambda: set_char_buttons(0)).pack(side=TOP, fill=X,
+                                                                                                       pady=2,
+                                                                                                       anchor='nw')
+    Button(character_filters, text='Check all', underline=2, command=lambda: set_char_buttons(1)).pack(side=TOP, fill=X,
+                                                                                                       pady=2,
+                                                                                                       anchor='nw')
 
     make_column_filter_frame(root)
     make_table_frame(root)
 
-    # Default column widths
+    # Binds
+    root.bind_all('<Alt-l>', lambda event=None: clear_filters())
+    root.bind_all('<Alt-i>', lambda event=None: filter_data())
+
+    root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(0))
+    root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(1))
+
+    root.bind_all('<F1>', lambda event=None: open_legend(root))
 
     root.mainloop()
 
