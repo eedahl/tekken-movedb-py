@@ -5,6 +5,8 @@ from tkinter import *
 import pandas
 from pandastable import Table, TableModel
 
+from tk_ToolTip import CreateToolTip
+
 # TODO(edahl): Hide/show columns cascade
 # TODO(edahl): Improve SUF, HF, BF, CHF filters
 # TODO(edahl): Highlight safe moves
@@ -171,6 +173,7 @@ def make_column_filter_frame(root):
     command_label = Label(column_filters, text="Command")
     command_label.pack(side=LEFT)
     command_entry = Entry(column_filters, textvariable=command_filter)
+    CreateToolTip(command_entry, 'Matches the input to commands exactly.')
     command_entry.pack(side=LEFT)
 
     global hl_filter
@@ -179,6 +182,7 @@ def make_column_filter_frame(root):
     hl_label = Label(column_filters, text="Hit levels")
     hl_label.pack(side=LEFT)
     hl_entry = Entry(column_filters, textvariable=hl_filter)
+    CreateToolTip(hl_entry, 'Matches the input to the beginning of hit levels.')
     hl_entry.pack(side=LEFT)
 
     global suf_filter
@@ -187,6 +191,7 @@ def make_column_filter_frame(root):
     suf_label = Label(column_filters, text="Start up frames")
     suf_label.pack(side=LEFT)
     suf_entry = Entry(column_filters, textvariable=suf_filter)
+    CreateToolTip(suf_entry, 'Searches for the input in the start up frames column.\n')
     suf_entry.pack(side=LEFT)
 
     global bf_filter
@@ -195,6 +200,8 @@ def make_column_filter_frame(root):
     bf_label = Label(column_filters, text="Block frames")
     bf_label.pack(side=LEFT)
     bf_entry = Entry(column_filters, textvariable=bf_filter)
+    CreateToolTip(bf_entry, 'Searches for the input in the block frames column.\n'
+                            'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     bf_entry.pack(side=LEFT)
 
     global hf_filter
@@ -203,6 +210,8 @@ def make_column_filter_frame(root):
     hf_label = Label(column_filters, text="Hit frames")
     hf_label.pack(side=LEFT)
     hf_field = Entry(column_filters, textvariable=hf_filter)
+    CreateToolTip(hf_field, 'Searches for the input in the hit frames column.\n'
+                            'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     hf_field.pack(side=LEFT)
 
     global chf_filter
@@ -211,6 +220,8 @@ def make_column_filter_frame(root):
     chf_label = Label(column_filters, text="CH frames")
     chf_label.pack(side=LEFT)
     chf_entry = Entry(column_filters, textvariable=chf_filter)
+    CreateToolTip(chf_entry, 'Searches for the input in the counter hit frames column.\n'
+                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     chf_entry.pack(side=LEFT)
 
     clear_filters_button = Button(column_filters, text="Clear filters", underline=1, command=clear_filters)
