@@ -67,6 +67,7 @@ suf_filter = None
 bf_filter = None
 hf_filter = None
 chf_filter = None
+notes_filter = None
 
 
 def load_moves_by_filename(filename):
@@ -115,6 +116,7 @@ def filter_data():
         bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
         hf = '(?={0})[^0-9]*'.format(re.escape(hf_filter.get()))
         chf = '(?={0})[^0-9]+'.format(re.escape(chf_filter.get()))
+        notes = '(?={0})'.format(re.escape(notes_filter.get()))
 
         b = ((active_characters[x[CHAR]].get() == 1) and
              (command_filter.get() == '' or x[CMD] == command_filter.get()) and
@@ -122,11 +124,12 @@ def filter_data():
              (suf_filter.get() == '' or re.match(suf, x[SUF]) is not None) and
              (bf_filter.get() == '' or re.search(bf, x[BF]) is not None) and
              (hf_filter.get() == '' or re.search(hf, x[HF]) is not None) and
-             (chf_filter.get() == '' or re.search(chf, x[CHF]) is not None))
+             (chf_filter.get() == '' or re.search(chf, x[CHF]) is not None) and
+             (notes_filter.get() == '' or re.search(notes, x[NOTES]) is not None))
 
         return b
 
-    tf = df[df[[CHAR, CMD, HL, SUF, BF, HF, CHF]].apply(f, axis=1)]
+    tf = df[df[[CHAR, CMD, HL, SUF, BF, HF, CHF, NOTES]].apply(f, axis=1)]
 
     tmp_widths = table.model.columnwidths
     table.model = TableModel(tf)
@@ -162,44 +165,45 @@ def open_legend(root):
 # TODO(edahl): Maybe put this into a class.
 def make_column_filter_frame(root):
     column_filters = Frame(root)
-    column_filters.pack(side=TOP, anchor='w')
 
-    # TODO(edahl): Fix Return filter shortcut
-    # column_filters.bind("<Return>", filter_data)
+    top_row = Frame(column_filters)
+    bottom_row = Frame(column_filters)
+
+    # TODO(edahl): Improve layout
 
     global command_filter
     command_filter = StringVar()
 
-    command_label = Label(column_filters, text="Command")
+    command_label = Label(top_row, text="Command")
     command_label.pack(side=LEFT)
-    command_entry = Entry(column_filters, textvariable=command_filter)
+    command_entry = Entry(top_row, textvariable=command_filter)
     CreateToolTip(command_entry, 'Matches the input to commands exactly.')
     command_entry.pack(side=LEFT)
 
     global hl_filter
     hl_filter = StringVar()
 
-    hl_label = Label(column_filters, text="Hit levels")
+    hl_label = Label(top_row, text="Hit levels")
     hl_label.pack(side=LEFT)
-    hl_entry = Entry(column_filters, textvariable=hl_filter)
+    hl_entry = Entry(top_row, textvariable=hl_filter)
     CreateToolTip(hl_entry, 'Matches the input to the beginning of hit levels.')
     hl_entry.pack(side=LEFT)
 
     global suf_filter
     suf_filter = StringVar()
 
-    suf_label = Label(column_filters, text="Start up frames")
+    suf_label = Label(top_row, text="Start up frames")
     suf_label.pack(side=LEFT)
-    suf_entry = Entry(column_filters, textvariable=suf_filter)
+    suf_entry = Entry(top_row, textvariable=suf_filter)
     CreateToolTip(suf_entry, 'Searches for the input in the start up frames column.\n')
     suf_entry.pack(side=LEFT)
 
     global bf_filter
     bf_filter = StringVar()
 
-    bf_label = Label(column_filters, text="Block frames")
+    bf_label = Label(bottom_row, text="Block frames")
     bf_label.pack(side=LEFT)
-    bf_entry = Entry(column_filters, textvariable=bf_filter)
+    bf_entry = Entry(bottom_row, textvariable=bf_filter)
     CreateToolTip(bf_entry, 'Searches for the input in the block frames column.\n'
                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     bf_entry.pack(side=LEFT)
@@ -207,9 +211,9 @@ def make_column_filter_frame(root):
     global hf_filter
     hf_filter = StringVar()
 
-    hf_label = Label(column_filters, text="Hit frames")
+    hf_label = Label(bottom_row, text="Hit frames")
     hf_label.pack(side=LEFT)
-    hf_field = Entry(column_filters, textvariable=hf_filter)
+    hf_field = Entry(bottom_row, textvariable=hf_filter)
     CreateToolTip(hf_field, 'Searches for the input in the hit frames column.\n'
                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     hf_field.pack(side=LEFT)
@@ -217,19 +221,36 @@ def make_column_filter_frame(root):
     global chf_filter
     chf_filter = StringVar()
 
-    chf_label = Label(column_filters, text="CH frames")
+    chf_label = Label(bottom_row, text="CH frames")
     chf_label.pack(side=LEFT)
-    chf_entry = Entry(column_filters, textvariable=chf_filter)
+    chf_entry = Entry(bottom_row, textvariable=chf_filter)
     CreateToolTip(chf_entry, 'Searches for the input in the counter hit frames column.\n'
                              'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     chf_entry.pack(side=LEFT)
 
-    clear_filters_button = Button(column_filters, text="Clear filters", underline=1, command=clear_filters)
-    clear_filters_button.pack(side=TOP, anchor='w', fill=X, ipadx=30, padx=15, pady=2)
+    global notes_filter
+    notes_filter = StringVar()
 
-    # Filter button
-    filter_button = Button(column_filters, text="Filter", underline=1, command=filter_data)
-    filter_button.pack(side=TOP, anchor='w', fill=X, ipadx=30, padx=15, pady=2)
+    notes_label = Label(bottom_row, text="Notes")
+    notes_label.pack(side=LEFT)
+    notes_entry = Entry(bottom_row, textvariable=notes_filter)
+    CreateToolTip(notes_entry, 'Searches for the input in the notes column.')
+    notes_entry.pack(side=LEFT)
+
+    # Filter buttons
+    button_frame = Frame(column_filters)
+
+    clear_filters_button = Button(button_frame, text="Clear filters", underline=1, command=clear_filters)
+    clear_filters_button.pack(side=TOP, ipadx=30, padx=15, pady=2)
+
+    filter_button = Button(button_frame, text="Filter", underline=1, command=filter_data)
+    filter_button.pack(side=TOP, fill=X, ipadx=30, padx=15, pady=2)
+
+    # Pack
+    button_frame.pack(side=RIGHT)
+    column_filters.pack(side=TOP, anchor='w', fill=X)
+    top_row.pack(side=TOP, anchor='w', pady=3)
+    bottom_row.pack(side=TOP, anchor='w', pady=3)
 
 
 def make_table_frame(root):
@@ -274,7 +295,7 @@ def main():
     root = Tk()
     # root.iconbitmap('jin.ico')
     root.title('Tekken Move Database')
-    root.geometry('1400x1050+20+20')
+    root.geometry('1500x1050+25+25')
 
     # Menu GUI
     menu = Menu(root)
