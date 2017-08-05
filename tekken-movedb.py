@@ -166,44 +166,39 @@ def open_legend(root):
 def make_column_filter_frame(root):
     column_filters = Frame(root)
 
-    top_row = Frame(column_filters)
-    bottom_row = Frame(column_filters)
-
-    # TODO(edahl): Improve layout
-
     global command_filter
     command_filter = StringVar()
 
-    command_label = Label(top_row, text="Command")
+    command_label = Label(column_filters, text="Command")
     command_label.pack(side=LEFT)
-    command_entry = Entry(top_row, textvariable=command_filter)
+    command_entry = Entry(column_filters, textvariable=command_filter)
     CreateToolTip(command_entry, 'Matches the input to commands exactly.')
     command_entry.pack(side=LEFT)
 
     global hl_filter
     hl_filter = StringVar()
 
-    hl_label = Label(top_row, text="Hit levels")
+    hl_label = Label(column_filters, text="Hit levels")
     hl_label.pack(side=LEFT)
-    hl_entry = Entry(top_row, textvariable=hl_filter)
+    hl_entry = Entry(column_filters, textvariable=hl_filter)
     CreateToolTip(hl_entry, 'Matches the input to the beginning of hit levels.')
     hl_entry.pack(side=LEFT)
 
     global suf_filter
     suf_filter = StringVar()
 
-    suf_label = Label(top_row, text="Start up frames")
+    suf_label = Label(column_filters, text="Start up frames")
     suf_label.pack(side=LEFT)
-    suf_entry = Entry(top_row, textvariable=suf_filter)
+    suf_entry = Entry(column_filters, textvariable=suf_filter)
     CreateToolTip(suf_entry, 'Searches for the input in the start up frames column.\n')
     suf_entry.pack(side=LEFT)
 
     global bf_filter
     bf_filter = StringVar()
 
-    bf_label = Label(bottom_row, text="Block frames")
+    bf_label = Label(column_filters, text="Block frames")
     bf_label.pack(side=LEFT)
-    bf_entry = Entry(bottom_row, textvariable=bf_filter)
+    bf_entry = Entry(column_filters, textvariable=bf_filter)
     CreateToolTip(bf_entry, 'Searches for the input in the block frames column.\n'
                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     bf_entry.pack(side=LEFT)
@@ -211,9 +206,9 @@ def make_column_filter_frame(root):
     global hf_filter
     hf_filter = StringVar()
 
-    hf_label = Label(bottom_row, text="Hit frames")
+    hf_label = Label(column_filters, text="Hit frames")
     hf_label.pack(side=LEFT)
-    hf_field = Entry(bottom_row, textvariable=hf_filter)
+    hf_field = Entry(column_filters, textvariable=hf_filter)
     CreateToolTip(hf_field, 'Searches for the input in the hit frames column.\n'
                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     hf_field.pack(side=LEFT)
@@ -221,9 +216,9 @@ def make_column_filter_frame(root):
     global chf_filter
     chf_filter = StringVar()
 
-    chf_label = Label(bottom_row, text="CH frames")
+    chf_label = Label(column_filters, text="CH frames")
     chf_label.pack(side=LEFT)
-    chf_entry = Entry(bottom_row, textvariable=chf_filter)
+    chf_entry = Entry(column_filters, textvariable=chf_filter)
     CreateToolTip(chf_entry, 'Searches for the input in the counter hit frames column.\n'
                              'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     chf_entry.pack(side=LEFT)
@@ -231,9 +226,9 @@ def make_column_filter_frame(root):
     global notes_filter
     notes_filter = StringVar()
 
-    notes_label = Label(bottom_row, text="Notes")
+    notes_label = Label(column_filters, text="Notes")
     notes_label.pack(side=LEFT)
-    notes_entry = Entry(bottom_row, textvariable=notes_filter)
+    notes_entry = Entry(column_filters, textvariable=notes_filter)
     CreateToolTip(notes_entry, 'Searches for the input in the notes column.')
     notes_entry.pack(side=LEFT)
 
@@ -248,9 +243,7 @@ def make_column_filter_frame(root):
 
     # Pack
     button_frame.pack(side=RIGHT)
-    column_filters.pack(side=TOP, anchor='w', fill=X)
-    top_row.pack(side=TOP, anchor='w', pady=3)
-    bottom_row.pack(side=TOP, anchor='w', pady=3)
+    column_filters.pack(side=TOP, anchor='w', fill=X, padx=10)
 
 
 def make_table_frame(root):
@@ -272,6 +265,30 @@ def make_table_frame(root):
     table.model.columnwidths[CHF] = 70
     table.model.columnwidths[DMG] = 70
     table.model.columnwidths[NOTES] = 400
+
+
+def set_char_buttons(val):
+    for x in active_characters.values():
+        x.set(val)
+
+
+def make_character_cascade(menu):
+    global char_names
+    character_menu = Menu(menu)
+    menu.add_cascade(label='Characters', menu=character_menu)
+
+    character_menu.add_command(label='Clear all', underline=3, command=lambda: set_char_buttons(0))
+    character_menu.add_command(label='Check all', underline=2, command=lambda: set_char_buttons(1))
+    character_menu.add_separator()
+
+    global move_files
+    char_names = char_names_from_filenames(move_files)
+    global active_characters
+    for x in char_names:
+        y = IntVar()
+        y.set(1)
+        active_characters.update({x: y})
+        character_menu.add_checkbutton(label=x, variable=active_characters[x])
 
 
 def main():
@@ -300,48 +317,28 @@ def main():
     # Menu GUI
     menu = Menu(root)
     root.config(menu=menu)
+
+    # File menu
     file_menu = Menu(menu)
     menu.add_cascade(label="File", menu=file_menu)
     file_menu.add_command(label='Save', command=save_movelist)
     file_menu.add_separator()
     file_menu.add_command(label="Exit", command=lambda: sys.exit(1))
 
+    # View menu
     view_menu = Menu(menu)
     menu.add_cascade(label="View", menu=view_menu)
 
     for col in cols:
         view_menu.add_checkbutton(label='Hide ' + col, state=DISABLED)
-    # add_command(label="Hide column")
 
+    # Characters menu GUI
+    make_character_cascade(menu)
+
+    # Help menu
     help_menu = Menu(menu)
     menu.add_cascade(label="Help", menu=help_menu)
     help_menu.add_command(label="Legend", command=lambda: open_legend(root))
-
-    # Character filter GUI
-    character_filters = Frame(root)
-    character_filters.pack(side=LEFT, anchor='nw', padx=10, pady=20)
-    char_names = char_names_from_filenames(move_files)
-
-    global active_characters
-    char_cbs = []
-    for x in char_names:
-        y = IntVar()
-        y.set(1)
-        active_characters.update({x: y})
-        cb = Checkbutton(character_filters, text=x, variable=active_characters[x])
-        cb.pack(side=TOP, anchor='nw')
-        char_cbs.append(cb)
-
-    def set_char_buttons(val):
-        for x in active_characters.values():
-            x.set(val)
-
-    Button(character_filters, text='Clear all', underline=3, command=lambda: set_char_buttons(0)).pack(side=TOP, fill=X,
-                                                                                                       pady=2,
-                                                                                                       anchor='nw')
-    Button(character_filters, text='Check all', underline=2, command=lambda: set_char_buttons(1)).pack(side=TOP, fill=X,
-                                                                                                       pady=2,
-                                                                                                       anchor='nw')
 
     make_column_filter_frame(root)
     make_table_frame(root)
