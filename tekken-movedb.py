@@ -277,8 +277,10 @@ def make_character_cascade(menu):
     character_menu = Menu(menu)
     menu.add_cascade(label='Characters', menu=character_menu)
 
-    character_menu.add_command(label='Clear all', underline=3, command=lambda: set_char_buttons(0))
-    character_menu.add_command(label='Check all', underline=2, command=lambda: set_char_buttons(1))
+    character_menu.add_command(label='Clear all', underline=1, accelerator='Ctrl+L',
+                               command=lambda: set_char_buttons(0))
+    character_menu.add_command(label='Check all', underline=3, accelerator='Ctrl+E',
+                               command=lambda: set_char_buttons(1))
     character_menu.add_separator()
 
     global move_files
@@ -321,7 +323,7 @@ def main():
     # File menu
     file_menu = Menu(menu)
     menu.add_cascade(label="File", menu=file_menu)
-    file_menu.add_command(label='Save', command=save_movelist)
+    file_menu.add_command(label='Save', underline=0, accelerator="Ctrl+S", command=save_movelist)
     file_menu.add_separator()
     file_menu.add_command(label="Exit", command=lambda: sys.exit(1))
 
@@ -338,22 +340,20 @@ def main():
     # Help menu
     help_menu = Menu(menu)
     menu.add_cascade(label="Help", menu=help_menu)
-    help_menu.add_command(label="Legend", command=lambda: open_legend(root))
+    help_menu.add_command(label="Legend", accelerator='F1', command=lambda: open_legend(root))
 
     make_column_filter_frame(root)
     make_table_frame(root)
 
     # Binds
     root.bind_all('<Alt-i>', lambda event=None: filter_data())
-    root.bind_all('<Alt-l>', lambda event=None: clear_filters())
-    root.bind_all('<Alt-i>', lambda event=None: filter_data())
+    root.bind_all('<Control-l>', lambda event=None: clear_filters())
+    root.bind_all('<Control-e>', lambda event=None: filter_data())
     root.bind_all('<Return>', lambda event=None: filter_data())
-
     root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(0))
     root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(1))
-
     root.bind_all('<F1>', lambda event=None: open_legend(root))
-
+    # TODO(edahl): Make ctrl+s work
     root.bind_all('<Control-s>', lambda event=None: save_movelist)
 
     root.mainloop()
