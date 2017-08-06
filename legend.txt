@@ -44,24 +44,22 @@ M   - Move hits mid, and also will hit a grounded opponent
 Sm  - Move hits special-mid  (can be blocked either standing or crouching)
 l   - Move hits low (must crouch to block - will hit if you are standing)
 L   - Move hits low, and also will hit a grounded opponent
+TC  - Technically crouching (avoids high attacks)
+TJ  - Technically jumping (avoids low attacks)
 UB  - Move is unblockable (cannot be blocked)
 UBH - Move is unblockable, but hits high and can be evaded by crouching
 
 Additional coventions:
 s    - Opponent recovers crouching
-KND  - Opponent is knocked down
 g    - Guard break (opponent can block, but not attack)
+KND  - Opponent is knocked down
 JG   - Move knocks opponent into the air, allowing for additional hits
 JGc  - Move juggles only on a Counter-Hit
 ST   - Move stuns opponent, providing attack advantage or additional hits
 STc  - Move stuns only on a Counter-Hit
-AW   - Move must be done with your back against a wall
-H    - Move has homing properties, and will track a sidestepping opponent.
-#    - Refer to the corresponding Comment # at the end of the character list.
-S!   - MOVE TAILSPINS AIRBORNE OPPONENT, ALLOWING FOR AN EXTENDED JUGGLE
-SS!  - MOVE TAILSPINS STANDING OPPONENT
-SS!c - MOVE TAILSPINS STANDING OPPONENT ON COUNTER-HIT
-RA   - MOVE PERFORMS RAGE ART COMBO WHEN IN RAGE MODE (LOW ON HEALTH)
-RD   - MOVE PERFORMS RAGE DRIVE ATTACK WHEN IN RAGE MODE (LOW ON HEALTH)
-PC   - MOVE POWER CRUSHES, WHERE ATTACK EXECUTION IGNORES INCOMING ATTACKS
-EX   - MOVE REQUIRES # OF EX-METERS TO PERFORM (FOR AKUMA AND ELIZA)
+H    - Move has homing properties, and will track a sidestepping opponent
+PC   - Power crush. Ignores incoming attacks;
+                    can be interrupted early or by a low
+RA   - Move performs rage art combo when in rage mode
+RD   - Move performs rage drive when in rage mode
+EX   - Move requires # of EX-meters to perform (for Akuma and Eliza)
