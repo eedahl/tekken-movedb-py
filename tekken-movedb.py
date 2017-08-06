@@ -169,89 +169,59 @@ def open_legend(root):
     Message(window, text=legend, font='Consolas', padx=10, pady=10).pack()
 
 
-# TODO(edahl): Maybe put this into a class.
 def make_column_filter_frame(root):
-    column_filters = ttk.Frame(root)
-
     global command_filter
-    command_filter = StringVar()
-
-    command_label = ttk.Label(column_filters, text="Command")
-    command_label.pack(side=LEFT)
-    command_entry = ttk.Entry(column_filters, textvariable=command_filter)
-    CreateToolTip(command_entry, 'Matches the input to commands exactly.')
-    command_entry.pack(side=LEFT)
-
     global hl_filter
-    hl_filter = StringVar()
-
-    hl_label = Label(column_filters, text="Hit levels")
-    hl_label.pack(side=LEFT)
-    hl_entry = ttk.Entry(column_filters, textvariable=hl_filter)
-    CreateToolTip(hl_entry, 'Matches the input to the beginning of hit levels.')
-    hl_entry.pack(side=LEFT)
-
     global suf_filter
-    suf_filter = StringVar()
-
-    suf_label = ttk.Label(column_filters, text="Start up frames")
-    suf_label.pack(side=LEFT)
-    suf_entry = ttk.Entry(column_filters, textvariable=suf_filter)
-    CreateToolTip(suf_entry, 'Searches for the input in the start up frames column.\n')
-    suf_entry.pack(side=LEFT)
-
     global bf_filter
-    bf_filter = StringVar()
-
-    bf_label = ttk.Label(column_filters, text="Block frames")
-    bf_label.pack(side=LEFT)
-    bf_entry = ttk.Entry(column_filters, textvariable=bf_filter)
-    CreateToolTip(bf_entry, 'Searches for the input in the block frames column.\n'
-                            'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
-    bf_entry.pack(side=LEFT)
-
     global hf_filter
-    hf_filter = StringVar()
-
-    hf_label = ttk.Label(column_filters, text="Hit frames")
-    hf_label.pack(side=LEFT)
-    hf_field = ttk.Entry(column_filters, textvariable=hf_filter)
-    CreateToolTip(hf_field, 'Searches for the input in the hit frames column.\n'
-                            'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
-    hf_field.pack(side=LEFT)
-
     global chf_filter
-    chf_filter = StringVar()
-
-    chf_label = ttk.Label(column_filters, text="CH frames")
-    chf_label.pack(side=LEFT)
-    chf_entry = ttk.Entry(column_filters, textvariable=chf_filter)
-    CreateToolTip(chf_entry, 'Searches for the input in the counter hit frames column.\n'
-                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
-    chf_entry.pack(side=LEFT)
-
     global notes_filter
-    notes_filter = StringVar()
+    # Entry fields and labels
+    variables = [command_filter, hl_filter, suf_filter, bf_filter, hf_filter, chf_filter, notes_filter]
+    texts = ['Command', 'HL', 'SUF', 'BF', 'HF', 'CHF', 'Notes']
+    tooltips = ['Matches the input to commands exactly.', 'Matches the input to the beginning of hit levels',
 
-    notes_label = ttk.Label(column_filters, text="Notes")
-    notes_label.pack(side=LEFT)
-    notes_entry = ttk.Entry(column_filters, textvariable=notes_filter)
-    CreateToolTip(notes_entry, 'Searches for the input in the notes column. Ignores case.')
-    notes_entry.pack(side=LEFT)
+                'Searches for the input in the start up frames column',
 
-    # Filter buttons
+                'Searches for the input in the block frames column.\n'
+                'A bare number d gets read as +d or -d, so with + or - to exclude the other',
+
+                'Searches for the input in the hit frames column.\n'
+                'A bare number d gets read as +d or -d, so with + or - to exclude the other',
+
+                'Searches for the input in the counter hit frames column.\n'
+                'A bare number d gets read as +d or -d, so with + or - to exclude the other',
+
+                'Searches for the input in the notes column, ignoring case.']
+
+    assert(len(variables) == len(texts) == len(tooltips))
+
+    column_filters = ttk.Frame(root)
+    for v, t, tt in zip(variables, texts, tooltips):
+        label = ttk.Label(column_filters, text=t)
+        label.pack(side=LEFT)
+        entry = ttk.Entry(column_filters, textvariable=command_filter)
+        CreateToolTip(entry, tt)
+        entry.pack(side=LEFT, padx=5)
+
+    # Buttons
     button_frame = ttk.Frame(column_filters)
 
-    clear_filters_button = ttk.Button(button_frame, text="Clear filters", underline=1, command=clear_filters)
-    CreateToolTip(clear_filters_button, 'Ctrl+L')
-    clear_filters_button.pack(side=TOP, ipadx=30, padx=15, pady=2)
+    texts = ['Filter', 'Clear filters']
+    underlines = [1, 1]
+    tooltips = ['Ctrl+E', 'Ctrl+L']
+    commands = [filter_data, clear_filters]
 
-    filter_button = ttk.Button(button_frame, text="Filter", underline=1, command=filter_data)
-    CreateToolTip(filter_button, 'Ctrl+E')
-    filter_button.pack(side=TOP, fill=X, ipadx=30, padx=15, pady=2)
+    assert(len(texts) == len(underlines) == len(tooltips) == len(commands))
+
+    for t, u, tt, c in zip(texts, underlines, tt, commands):
+        bt = ttk.Button(button_frame, text=t, underline=u, command=c)
+        CreateToolTip(bt, t)
+        bt.pack(side=TOP, fill=X, ipadx=30, padx=15, pady=2)
 
     # Pack
-    button_frame.pack(side=RIGHT)
+    button_frame.pack(side=LEFT)
     column_filters.pack(side=TOP, anchor='w', fill=X, padx=10)
 
 
@@ -323,7 +293,7 @@ def main():
     root = Tk()
     # root.iconbitmap('jin.ico')
     root.title('Tekken Move Database')
-    root.geometry('1500x1050+25+25')
+    root.geometry('1330x1000+25+25')
 
     # Menu GUI
     menu = Menu(root)
