@@ -629,12 +629,12 @@
     {
         "Character": "Lars",
         "Command": "u/b or u or u/f+3",
-        "Hit level": "m (TJ)(, m)",
+        "Hit level": "m (TJ) (, m)",
         "Damage": "12(,12)",
         "SUF": "16~17 RC (,34)",
         "BF": "-21~-20 (13~12)",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -666,8 +666,8 @@
         "Damage": "27",
         "SUF": "21(22~)",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -677,8 +677,8 @@
         "Damage": "27",
         "SUF": "21(22~)",
         "BF": "",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -776,8 +776,8 @@
         "Damage": "21",
         "SUF": "15~16",
         "BF": "-12~-11",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -787,8 +787,8 @@
         "Damage": "21",
         "SUF": "15~16",
         "BF": "",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -908,8 +908,8 @@
         "Damage": "27",
         "SUF": "16~17 (46~)",
         "BF": "-18~-17",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -963,8 +963,8 @@
         "Damage": "27",
         "SUF": "14",
         "BF": "-14",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1271,8 +1271,8 @@
         "Damage": "27",
         "SUF": "21(22~)",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1436,8 +1436,8 @@
         "Damage": "21",
         "SUF": "15~16",
         "BF": "-12~-11",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1542,12 +1542,12 @@
     {
         "Character": "Lars",
         "Command": "u/b or u or u/f+3",
-        "Hit level": "m (TJ)(, m)",
+        "Hit level": "m (TJ) (, m)",
         "Damage": "12(,12)",
         "SUF": "16~17 RC (,34)",
         "BF": "-21~-20 (13~12)",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

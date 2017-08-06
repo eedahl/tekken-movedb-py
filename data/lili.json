@@ -270,8 +270,8 @@
         "Damage": "16",
         "SUF": "16~17",
         "BF": "-11~-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -281,8 +281,8 @@
         "Damage": "16",
         "SUF": "16~17 RBT",
         "BF": "-11~-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -468,8 +468,8 @@
         "Damage": "23",
         "SUF": "17 Air",
         "BF": "-21",
-        "HF": "Launch(JG?)",
-        "CHF": "Launch(JG?)",
+        "HF": "JG(JG?)",
+        "CHF": "JG(JG?)",
         "Notes": ""
     },
     {
@@ -677,8 +677,8 @@
         "Damage": "25",
         "SUF": "22~23",
         "BF": "-16~-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -688,8 +688,8 @@
         "Damage": "25",
         "SUF": "22~23",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -710,8 +710,8 @@
         "Damage": "18(,5,5)",
         "SUF": "36~37",
         "BF": "-8~-7",
-        "HF": "Launch (JG?)(Throw)",
-        "CHF": "Launch (JG?)(Throw)",
+        "HF": "JG (JG?) (Throw)",
+        "CHF": "JG (JG?) (Throw)",
         "Notes": ""
     },
     {
@@ -732,8 +732,8 @@
         "Damage": "13",
         "SUF": "15~16",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -787,8 +787,8 @@
         "Damage": "15,22",
         "SUF": "15~18 Air",
         "BF": "-21",
-        "HF": "Launch(JG?)",
-        "CHF": "Launch(JG?)",
+        "HF": "JG(JG?)",
+        "CHF": "JG(JG?)",
         "Notes": ""
     },
     {
@@ -963,19 +963,19 @@
         "Damage": "17",
         "SUF": "16~17",
         "BF": "-12~-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
         "Character": "Lili",
         "Command": "WS+2, B",
-        "Hit level": "m (TC)(BT)",
+        "Hit level": "m (TC) (BT)",
         "Damage": "17",
         "SUF": "16~17 RBT",
         "BF": "-12~-11?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -985,8 +985,8 @@
         "Damage": "20",
         "SUF": "16~17",
         "BF": "-21~-20",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1014,7 +1014,7 @@
     {
         "Character": "Lili",
         "Command": "FC+d/f+3 or d, D/F+3",
-        "Hit level": "l (TJ),  (TC)",
+        "Hit level": "l (TJ), (TC)",
         "Damage": "19",
         "SUF": "23~32",
         "BF": "-18~-9",
@@ -1117,8 +1117,8 @@
         "Damage": "20",
         "SUF": "16(18~)",
         "BF": "-21",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1278,7 +1278,7 @@
     {
         "Character": "Lili",
         "Command": "BT d+3+4",
-        "Hit level": "l (TC)(BT)",
+        "Hit level": "l (TC) (BT)",
         "Damage": "22",
         "SUF": "22~24b",
         "BF": "-24~-22?",
@@ -1634,8 +1634,8 @@
         "Damage": "17",
         "SUF": "16~17",
         "BF": "-12~-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1645,8 +1645,8 @@
         "Damage": "20",
         "SUF": "16~17",
         "BF": "-21~-20",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1722,8 +1722,8 @@
         "Damage": "25",
         "SUF": "22~23",
         "BF": "-16~-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1733,8 +1733,8 @@
         "Damage": "13",
         "SUF": "15~16",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1756,7 +1756,7 @@
         "SUF": "15",
         "BF": "-12",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

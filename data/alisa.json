@@ -332,7 +332,7 @@
     {
         "Character": "Alisa",
         "Command": "f+1+2, 3+4",
-        "Hit level": "m, (Special) (TJ)(SBT)",
+        "Hit level": "m, (Special) (TJ) (SBT)",
         "Damage": "25",
         "SUF": "14~16a",
         "BF": "",
@@ -343,7 +343,7 @@
     {
         "Character": "Alisa",
         "Command": "f+1+2, f+3+4",
-        "Hit level": "m, (Special) (TJ)(DBT)",
+        "Hit level": "m, (Special) (TJ) (DBT)",
         "Damage": "25",
         "SUF": "14~16a",
         "BF": "",
@@ -435,8 +435,8 @@
         "Damage": "16",
         "SUF": "16~17",
         "BF": "-9~-8",
-        "HF": "Launch (JG?)(+7)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?) (+7)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -644,8 +644,8 @@
         "Damage": "15,1,30",
         "SUF": "15~16",
         "BF": "-16~-14",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -732,8 +732,8 @@
         "Damage": "20",
         "SUF": "19~20",
         "BF": "-17~-16",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -787,8 +787,8 @@
         "Damage": "25,20",
         "SUF": "37~39",
         "BF": "-20~-19",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -816,7 +816,7 @@
     {
         "Character": "Alisa",
         "Command": "u/f+3, 3+4",
-        "Hit level": "m (TJ), (Special) (TJ)(SBT)",
+        "Hit level": "m (TJ), (Special) (TJ) (SBT)",
         "Damage": "15",
         "SUF": "20 Air",
         "BF": "-29",
@@ -827,7 +827,7 @@
     {
         "Character": "Alisa",
         "Command": "u/f+3, f+3+4",
-        "Hit level": "m (TJ), (Special) (TJ)(DBT)",
+        "Hit level": "m (TJ), (Special) (TJ) (DBT)",
         "Damage": "15",
         "SUF": "20 Air",
         "BF": "-29",
@@ -1084,8 +1084,8 @@
         "Damage": "12,9,23",
         "SUF": "13",
         "BF": "-10",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1095,8 +1095,8 @@
         "Damage": "12,9,23",
         "SUF": "13",
         "BF": "-10",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1106,30 +1106,30 @@
         "Damage": "24",
         "SUF": "17~18",
         "BF": "-13~-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
         "Character": "Alisa",
         "Command": "WS+2, 3+4",
-        "Hit level": "m, (Special) (TJ)(SBT)",
+        "Hit level": "m, (Special) (TJ) (SBT)",
         "Damage": "24",
         "SUF": "17~18 Air",
         "BF": "-6~-5",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
         "Character": "Alisa",
         "Command": "WS+2, f+3+4",
-        "Hit level": "m, (Special) (TJ)(DBT)",
+        "Hit level": "m, (Special) (TJ) (DBT)",
         "Damage": "24",
         "SUF": "17~18 Air",
         "BF": "-6~-5",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1414,14 +1414,14 @@
         "Damage": "30",
         "SUF": "20~21a (33~)",
         "BF": "-9~-8",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
         "Character": "Alisa",
         "Command": "f+3+4 (to SBT)",
-        "Hit level": "(Special) (TJ)(SBT)",
+        "Hit level": "(Special) (TJ) (SBT)",
         "Damage": "",
         "SUF": "20~21 (33~)",
         "BF": "",
@@ -1535,8 +1535,8 @@
         "Damage": "22(,5)",
         "SUF": "18~19( Air) (43~)",
         "BF": "-27~-26",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1590,8 +1590,8 @@
         "Damage": "5*3?",
         "SUF": "20",
         "BF": "-6?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1601,7 +1601,7 @@
         "Damage": "5*3?",
         "SUF": "20",
         "BF": "",
-        "HF": "Launch",
+        "HF": "JG",
         "CHF": "",
         "Notes": ""
     },
@@ -1667,8 +1667,8 @@
         "Damage": "3*5,20(,3)",
         "SUF": "23,( RBT)",
         "BF": "-53",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -2217,8 +2217,8 @@
         "Damage": "24",
         "SUF": "17~18",
         "BF": "-13~-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {

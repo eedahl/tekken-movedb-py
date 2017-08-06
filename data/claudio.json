@@ -57,7 +57,7 @@
     {
         "Character": "Claudio",
         "Command": "2, 1, 2",
-        "Hit level": "h, m, m(, (Special))(STB)",
+        "Hit level": "h, m, m(, (Special)) (STB)",
         "Damage": "",
         "SUF": "12",
         "BF": "-13",
@@ -167,7 +167,7 @@
     {
         "Character": "Claudio",
         "Command": "f+2, 2",
-        "Hit level": "h, m(, (Special))(STB)",
+        "Hit level": "h, m(, (Special)) (STB)",
         "Damage": "",
         "SUF": "12",
         "BF": "-24?~",
@@ -237,8 +237,8 @@
         "Damage": "",
         "SUF": "15",
         "BF": "-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -387,7 +387,7 @@
     {
         "Character": "Claudio",
         "Command": "b+2",
-        "Hit level": "h?(, (Special))(STB)",
+        "Hit level": "h?(, (Special)) (STB)",
         "Damage": "",
         "SUF": "14",
         "BF": "-6?",
@@ -420,7 +420,7 @@
     {
         "Character": "Claudio",
         "Command": "b+4, 2",
-        "Hit level": "m, m(, (Special))(STB)",
+        "Hit level": "m, m(, (Special)) (STB)",
         "Damage": "",
         "SUF": "17",
         "BF": "-9?",
@@ -535,7 +535,7 @@
         "SUF": "15",
         "BF": "-13",
         "HF": "KND?",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -545,8 +545,8 @@
         "Damage": "",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -585,7 +585,7 @@
     {
         "Character": "Claudio",
         "Command": "f, F+2, 1+2 or FC+d/f+2, 1+2",
-        "Hit level": "m, m(, (Special))(STB)",
+        "Hit level": "m, m(, (Special)) (STB)",
         "Damage": "",
         "SUF": "15(16~)",
         "BF": "-13",
@@ -607,7 +607,7 @@
     {
         "Character": "Claudio",
         "Command": "f, f, f+2",
-        "Hit level": "h(, (Special))(STB)",
+        "Hit level": "h(, (Special)) (STB)",
         "Damage": "",
         "SUF": "",
         "BF": "+7~",
@@ -640,12 +640,12 @@
     {
         "Character": "Claudio",
         "Command": "WS+2",
-        "Hit level": "m(, (Special))(STB)",
+        "Hit level": "m(, (Special)) (STB)",
         "Damage": "",
         "SUF": "15",
         "BF": "-14",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -838,7 +838,7 @@
     {
         "Character": "Claudio",
         "Command": "b+2",
-        "Hit level": "h?(, (Special))(STB)",
+        "Hit level": "h?(, (Special)) (STB)",
         "Damage": "",
         "SUF": "14",
         "BF": "-6?",
@@ -1102,12 +1102,12 @@
     {
         "Character": "Claudio",
         "Command": "WS+2",
-        "Hit level": "m(, (Special))(STB)",
+        "Hit level": "m(, (Special)) (STB)",
         "Damage": "",
         "SUF": "15",
         "BF": "-14",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1228,7 +1228,7 @@
         "SUF": "15",
         "BF": "-13",
         "HF": "KND?",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1238,8 +1238,8 @@
         "Damage": "",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

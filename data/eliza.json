@@ -39,8 +39,8 @@
         "Damage": "7,10,20",
         "SUF": "10",
         "BF": "",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -160,8 +160,8 @@
         "Damage": "17",
         "SUF": "15",
         "BF": "-13~?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -237,8 +237,8 @@
         "Damage": "13,15",
         "SUF": "14",
         "BF": "",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -325,8 +325,8 @@
         "Damage": "25",
         "SUF": "19",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -376,7 +376,7 @@
     {
         "Character": "Eliza",
         "Command": "f, F+2",
-        "Hit level": "m(, (Special))(DS)",
+        "Hit level": "m(, (Special)) (DS)",
         "Damage": "25",
         "SUF": "14(15~)",
         "BF": "",
@@ -446,8 +446,8 @@
         "Damage": "18",
         "SUF": "15",
         "BF": "",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -530,7 +530,7 @@
     {
         "Character": "Eliza",
         "Command": "MG 2",
-        "Hit level": "m(, (Special))(DS)",
+        "Hit level": "m(, (Special)) (DS)",
         "Damage": "25",
         "SUF": "14(22~)",
         "BF": "",
@@ -611,8 +611,8 @@
         "Damage": "",
         "SUF": "",
         "BF": "",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -941,8 +941,8 @@
         "Damage": "18",
         "SUF": "15",
         "BF": "",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1051,8 +1051,8 @@
         "Damage": "25",
         "SUF": "19",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

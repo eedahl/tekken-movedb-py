@@ -83,8 +83,8 @@
         "Damage": "7,10,21",
         "SUF": "10",
         "BF": "-19",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -227,7 +227,7 @@
         "SUF": "11",
         "BF": "-7",
         "HF": "+8",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -589,8 +589,8 @@
         "Damage": "18",
         "SUF": "27",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -666,8 +666,8 @@
         "Damage": "22",
         "SUF": "19",
         "BF": "-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -853,8 +853,8 @@
         "Damage": "20",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -948,7 +948,7 @@
     {
         "Character": "Katarina",
         "Command": "in rage HAR 1+2",
-        "Hit level": "m (TJ)(, (throw))",
+        "Hit level": "m (TJ) (, (throw))",
         "Damage": "20,8,27",
         "SUF": "",
         "BF": "+5?s",
@@ -1019,7 +1019,7 @@
         "SUF": "11",
         "BF": "-3?",
         "HF": "+8",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1040,8 +1040,8 @@
         "Damage": "18",
         "SUF": "27",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1304,8 +1304,8 @@
         "Damage": "20",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1403,8 +1403,8 @@
         "Damage": "22",
         "SUF": "19",
         "BF": "-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1470,7 +1470,7 @@
         "SUF": "11(12~)",
         "BF": "-3?",
         "HF": "+8",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

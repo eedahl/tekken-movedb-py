@@ -226,8 +226,8 @@
         "Damage": "17(,14)",
         "SUF": "18",
         "BF": "-24~?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -387,7 +387,7 @@
     {
         "Character": "Kazumi",
         "Command": "u/b or u+2",
-        "Hit level": "h (TC)(, Tiger)",
+        "Hit level": "h (TC) (, Tiger)",
         "Damage": "12(,20)",
         "SUF": "15",
         "BF": "-10?",
@@ -398,7 +398,7 @@
     {
         "Character": "Kazumi",
         "Command": "u/f+2",
-        "Hit level": "h (TC)(, Tiger)",
+        "Hit level": "h (TC) (, Tiger)",
         "Damage": "12(,20)",
         "SUF": "15",
         "BF": "-10",
@@ -458,7 +458,7 @@
         "SUF": "15",
         "BF": "-13?",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -468,8 +468,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -490,8 +490,8 @@
         "Damage": "17,20",
         "SUF": "13?(14?~)",
         "BF": "-8~-?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": "Rage art"
     },
     {
@@ -589,8 +589,8 @@
         "Damage": "20",
         "SUF": "18",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -699,8 +699,8 @@
         "Damage": "20",
         "SUF": "11~12?",
         "BF": "-6",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -799,7 +799,7 @@
         "SUF": "11",
         "BF": "",
         "HF": "+",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1117,8 +1117,8 @@
         "Damage": "20",
         "SUF": "18",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1190,7 +1190,7 @@
     {
         "Character": "Kazumi",
         "Command": "u/b or u+2",
-        "Hit level": "h (TC)(, Tiger)",
+        "Hit level": "h (TC) (, Tiger)",
         "Damage": "12(,20)",
         "SUF": "15",
         "BF": "-10?",
@@ -1201,7 +1201,7 @@
     {
         "Character": "Kazumi",
         "Command": "u/f+2",
-        "Hit level": "h (TC)(, Tiger)",
+        "Hit level": "h (TC) (, Tiger)",
         "Damage": "12(,20)",
         "SUF": "15",
         "BF": "-10",
@@ -1239,7 +1239,7 @@
         "SUF": "15",
         "BF": "-13?",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1249,8 +1249,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1294,7 +1294,7 @@
         "SUF": "11",
         "BF": "",
         "HF": "+",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

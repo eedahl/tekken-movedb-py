@@ -61,8 +61,8 @@
         "Damage": "13,14,29",
         "SUF": "10 RC",
         "BF": "-14~-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -116,8 +116,8 @@
         "Damage": "17,21",
         "SUF": "17",
         "BF": "-17",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -160,8 +160,8 @@
         "Damage": "9,10,18",
         "SUF": "10",
         "BF": "-16~-15",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -259,7 +259,7 @@
         "Damage": "10,14,16,16",
         "SUF": "15 RC",
         "BF": "-8",
-        "HF": "+3(Launch (JG?))",
+        "HF": "+3(JG (JG?))",
         "CHF": "+3",
         "Notes": ""
     },
@@ -281,8 +281,8 @@
         "Damage": "8,27",
         "SUF": "15",
         "BF": "-16?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -413,8 +413,8 @@
         "Damage": "6,6,6,6,27",
         "SUF": "14~15, 32~33",
         "BF": "-13~-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -567,8 +567,8 @@
         "Damage": "31(,3)",
         "SUF": "22~23 Air",
         "BF": "-33~-32",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -596,7 +596,7 @@
     {
         "Character": "Kuma",
         "Command": "u+1+2, 3+4 (Cancel)",
-        "Hit level": "(Special) (TJ)(HBS)",
+        "Hit level": "(Special) (TJ) (HBS)",
         "Damage": "",
         "SUF": "31~32",
         "BF": "",
@@ -644,8 +644,8 @@
         "Damage": "17",
         "SUF": "16",
         "BF": "-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -655,8 +655,8 @@
         "Damage": "17,17",
         "SUF": "16",
         "BF": "-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -721,8 +721,8 @@
         "Damage": "31",
         "SUF": "19~20 (20~)",
         "BF": "-20~-19",
-        "HF": "Launch(JG?)",
-        "CHF": "Launch(JG?)",
+        "HF": "JG(JG?)",
+        "CHF": "JG(JG?)",
         "Notes": ""
     },
     {
@@ -897,8 +897,8 @@
         "Damage": "20",
         "SUF": "15",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -919,8 +919,8 @@
         "Damage": "21",
         "SUF": "19~20",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1062,7 +1062,7 @@
         "Damage": "16,16,20",
         "SUF": "17 RC",
         "BF": "-1",
-        "HF": "+10(Launch (JG?))",
+        "HF": "+10(JG (JG?))",
         "CHF": "+10",
         "Notes": ""
     },
@@ -1172,7 +1172,7 @@
         "Damage": "16,16,16",
         "SUF": "18",
         "BF": "-8~-7",
-        "HF": "+3~+4 (Launch (JG?))",
+        "HF": "+3~+4 (JG (JG?))",
         "CHF": "+3~+4",
         "Notes": ""
     },
@@ -1293,8 +1293,8 @@
         "Damage": "32(,3)",
         "SUF": "19~21 (34~)",
         "BF": "-15~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1326,8 +1326,8 @@
         "Damage": "27",
         "SUF": "15~16 (30~)",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1421,7 +1421,7 @@
     {
         "Character": "Kuma",
         "Command": "HBS u/b or u or u/f",
-        "Hit level": "(Special)(Low parry)",
+        "Hit level": "(Special) (Low parry)",
         "Damage": "",
         "SUF": " RC~",
         "BF": "",
@@ -1432,7 +1432,7 @@
     {
         "Character": "Kuma",
         "Command": "HBS F",
-        "Hit level": "(Special)(Low parry)(HBS)",
+        "Hit level": "(Special) (Low parry) (HBS)",
         "Damage": "",
         "SUF": "~",
         "BF": "",
@@ -1476,7 +1476,7 @@
     {
         "Character": "Kuma",
         "Command": "d/b or d or d/f+3+4 (to SIT)",
-        "Hit level": "(Special) (TC)(SIT)",
+        "Hit level": "(Special) (TC) (SIT)",
         "Damage": "",
         "SUF": "",
         "BF": "",
@@ -1546,8 +1546,8 @@
         "Damage": "24",
         "SUF": "21~22 (42~)",
         "BF": "-15~-14",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1623,8 +1623,8 @@
         "Damage": "28",
         "SUF": "17(48~)",
         "BF": "-17",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1663,7 +1663,7 @@
     {
         "Character": "Kuma",
         "Command": "ROL 3+4 (to HBS)",
-        "Hit level": "(Special) (TC)(HBS)",
+        "Hit level": "(Special) (TC) (HBS)",
         "Damage": "",
         "SUF": "25~32 (56~)",
         "BF": "",

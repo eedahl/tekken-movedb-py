@@ -156,7 +156,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "3~4, u/b or u or u/f",
-        "Hit level": "m, m (TJ), (Special) (TJ)(DGF)",
+        "Hit level": "m, m (TJ), (Special) (TJ) (DGF)",
         "Damage": "16,21",
         "SUF": "17,28~29 a(18~)",
         "BF": "+5~+6",
@@ -182,8 +182,8 @@
         "Damage": "33",
         "SUF": "25a(26~)",
         "BF": "-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -369,8 +369,8 @@
         "Damage": "32,27",
         "SUF": "16b",
         "BF": "-6",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -398,7 +398,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "f+3+4",
-        "Hit level": "m(, (Special))(FLE)",
+        "Hit level": "m(, (Special)) (FLE)",
         "Damage": "27(35)",
         "SUF": "21~25?",
         "BF": "-14~-10?",
@@ -457,8 +457,8 @@
         "Damage": "17",
         "SUF": "15~16",
         "BF": "-7~-6",
-        "HF": "Launch (JG?)(+4a)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?) (+4a)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -926,7 +926,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "d/b*, 1+2 or FC+d/b*, 1+2 (to PDP)",
-        "Hit level": "(Special) (TC)(PDP)",
+        "Hit level": "(Special) (TC) (PDP)",
         "Damage": "",
         "SUF": " RC",
         "BF": "",
@@ -1084,8 +1084,8 @@
         "Damage": "16,27",
         "SUF": "14",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1095,8 +1095,8 @@
         "Damage": "16,27",
         "SUF": "14",
         "BF": "-7",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1227,8 +1227,8 @@
         "Damage": "20",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1289,7 +1289,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "u/f+1+2, 1+2",
-        "Hit level": "(Special) (TJ)(DGF)",
+        "Hit level": "(Special) (TJ) (DGF)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1311,7 +1311,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "u/f+1+2, b, n+1+2",
-        "Hit level": "(Special) (TJ)(DGF)",
+        "Hit level": "(Special) (TJ) (DGF)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1333,7 +1333,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "u/f+3+4, 1+2",
-        "Hit level": "(Special) (TJ)(DGF)",
+        "Hit level": "(Special) (TJ) (DGF)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1348,14 +1348,14 @@
         "Damage": "27,33",
         "SUF": "",
         "BF": "-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
         "Character": "Yoshimitsu",
         "Command": "u/f+3+4, d+1+2",
-        "Hit level": "m (TJ), m (TJ)(FLE)",
+        "Hit level": "m (TJ), m (TJ) (FLE)",
         "Damage": "27,9",
         "SUF": " Air",
         "BF": "+18 GB",
@@ -1403,8 +1403,8 @@
         "Damage": "27,10,20",
         "SUF": "",
         "BF": "-14~+7",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1480,8 +1480,8 @@
         "Damage": "27",
         "SUF": "15~16 RBT (16~)",
         "BF": "-5~-4?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1524,8 +1524,8 @@
         "Damage": "20,20,27",
         "SUF": "22~24 (23~)",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1590,8 +1590,8 @@
         "Damage": "27",
         "SUF": "17~18 (17~)",
         "BF": "-15~-14",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1601,8 +1601,8 @@
         "Damage": "27",
         "SUF": "17~18 (17~)",
         "BF": "-7~-6",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1799,8 +1799,8 @@
         "Damage": "21",
         "SUF": "15a",
         "BF": "-9?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1855,7 +1855,7 @@
         "SUF": "17(26~)",
         "BF": "-9",
         "HF": "+2",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1865,8 +1865,8 @@
         "Damage": "27",
         "SUF": "18(27~)",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1905,7 +1905,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "Grounded face up 3+4",
-        "Hit level": "(Special) (TC)(IND)",
+        "Hit level": "(Special) (TC) (IND)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1927,7 +1927,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "1+2 or FC+1+2 (to KIN)",
-        "Hit level": "(Special)(Returns move)(KIN)",
+        "Hit level": "(Special) (Returns move) (KIN)",
         "Damage": "",
         "SUF": "28",
         "BF": "",
@@ -1949,7 +1949,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "KIN F",
-        "Hit level": "(Special) (TC)(KIN)",
+        "Hit level": "(Special) (TC) (KIN)",
         "Damage": "",
         "SUF": "39~40",
         "BF": "",
@@ -2008,8 +2008,8 @@
         "Damage": "20",
         "SUF": "21(36~)",
         "BF": "-14",
-        "HF": "Launch(JG?)",
-        "CHF": "Launch(JG?)",
+        "HF": "JG(JG?)",
+        "CHF": "JG(JG?)",
         "Notes": ""
     },
     {
@@ -2114,7 +2114,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "KIN u+1+2",
-        "Hit level": "(Special) (TJ)(KIN)",
+        "Hit level": "(Special) (TJ) (KIN)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2125,7 +2125,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "3+4 or BT 3+4 (to MED)",
-        "Hit level": "(Special)(Recover health)(MED)",
+        "Hit level": "(Special) (Recover health) (MED)",
         "Damage": "",
         "SUF": " RBT",
         "BF": "",
@@ -2162,8 +2162,8 @@
         "Damage": "20",
         "SUF": "17~28 RBT",
         "BF": "-14~-3",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2235,7 +2235,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "d+1+2 (to FLE)",
-        "Hit level": "m (TJ)(FLE)",
+        "Hit level": "m (TJ) (FLE)",
         "Damage": "9",
         "SUF": "16 Air~",
         "BF": "+18 GB",
@@ -2279,7 +2279,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "FLE 3 or 4",
-        "Hit level": "(Special) (TJ)(FLE)",
+        "Hit level": "(Special) (TJ) (FLE)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2294,8 +2294,8 @@
         "Damage": "21?",
         "SUF": "18~19",
         "BF": "-8~-7",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2305,14 +2305,14 @@
         "Damage": "33",
         "SUF": "25",
         "BF": "-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
         "Character": "Yoshimitsu",
         "Command": "FLE f or b (to WFL)",
-        "Hit level": "(Special) (TJ)(WFL)",
+        "Hit level": "(Special) (TJ) (WFL)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2367,7 +2367,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "FLE d",
-        "Hit level": "(Special) (TC)(FLE)",
+        "Hit level": "(Special) (TC) (FLE)",
         "Damage": "",
         "SUF": " RC",
         "BF": "",
@@ -2378,7 +2378,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "FLE d/b or d or d/f+3+4",
-        "Hit level": "(Special) (TC)(FLE)",
+        "Hit level": "(Special) (TC) (FLE)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2389,7 +2389,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "FLE u/b or u or u/f+1+2",
-        "Hit level": "(Special) (TJ)(DGF)",
+        "Hit level": "(Special) (TJ) (DGF)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2433,7 +2433,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "d+3+4 (to IND)",
-        "Hit level": "(Special) (TC)(IND)",
+        "Hit level": "(Special) (TC) (IND)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2444,7 +2444,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "IND n (to INS)",
-        "Hit level": "(Special) (TC)(INS)",
+        "Hit level": "(Special) (TC) (INS)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -2455,7 +2455,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "INS 1",
-        "Hit level": "! (TJ)(INS)",
+        "Hit level": "! (TJ) (INS)",
         "Damage": "20",
         "SUF": "53",
         "BF": "0 OC",
@@ -2477,7 +2477,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "INS 3",
-        "Hit level": "m (TJ)(INS)",
+        "Hit level": "m (TJ) (INS)",
         "Damage": "20",
         "SUF": "32~38",
         "BF": "-31~-25",
@@ -2488,18 +2488,18 @@
     {
         "Character": "Yoshimitsu",
         "Command": "INS 3, 3+4",
-        "Hit level": "m (TJ), m (TJ)(INS)",
+        "Hit level": "m (TJ), m (TJ) (INS)",
         "Damage": "20,27",
         "SUF": "32~38",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
         "Character": "Yoshimitsu",
         "Command": "INS 4",
-        "Hit level": "l (TC)(INS)",
+        "Hit level": "l (TC) (INS)",
         "Damage": "20",
         "SUF": "18?s",
         "BF": "-21",
@@ -2532,7 +2532,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "INS 1+2",
-        "Hit level": "(Special) (TJ)(FLE)",
+        "Hit level": "(Special) (TJ) (FLE)",
         "Damage": "",
         "SUF": "a",
         "BF": "",
@@ -2543,7 +2543,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "INS u+1+2",
-        "Hit level": "(Special) (TJ)(INS)",
+        "Hit level": "(Special) (TJ) (INS)",
         "Damage": "",
         "SUF": "a",
         "BF": "",
@@ -2554,7 +2554,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "u+1+2 (to DGF)",
-        "Hit level": "(Special) (TJ)(DGF)",
+        "Hit level": "(Special) (TJ) (DGF)",
         "Damage": "",
         "SUF": "a",
         "BF": "",
@@ -2598,12 +2598,12 @@
     {
         "Character": "Yoshimitsu",
         "Command": "DGF 2",
-        "Hit level": "h (TJ)(DGF)",
+        "Hit level": "h (TJ) (DGF)",
         "Damage": "20",
         "SUF": "16~17a (26~)",
         "BF": "+4~+5",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2631,7 +2631,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "DGF 1+2",
-        "Hit level": "(Special) (TJ)(FLE)",
+        "Hit level": "(Special) (TJ) (FLE)",
         "Damage": "",
         "SUF": "a",
         "BF": "",
@@ -2642,7 +2642,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "DGF 3+4",
-        "Hit level": "h!, ( (Sky))(throw)",
+        "Hit level": "h!, ( (Sky)) (throw)",
         "Damage": "22,18",
         "SUF": "20~21 (30~)",
         "BF": "Throw",
@@ -2664,7 +2664,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "DGF d+3+4",
-        "Hit level": "(Special) (TC)(IND)",
+        "Hit level": "(Special) (TC) (IND)",
         "Damage": "",
         "SUF": "a",
         "BF": "",
@@ -3159,7 +3159,7 @@
     {
         "Character": "Yoshimitsu",
         "Command": "NSS IND 1",
-        "Hit level": "m (TJ)(INS)",
+        "Hit level": "m (TJ) (INS)",
         "Damage": "20",
         "SUF": "48~51",
         "BF": "-8~-5 OC",
@@ -3361,8 +3361,8 @@
         "Damage": "27",
         "SUF": "15~16 RBT (16~)",
         "BF": "-6~-5",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -3669,8 +3669,8 @@
         "Damage": "20",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -3703,7 +3703,7 @@
         "SUF": "17(26~)",
         "BF": "-9",
         "HF": "+2",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -3713,8 +3713,8 @@
         "Damage": "27",
         "SUF": "18(27~)",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -3999,8 +3999,8 @@
         "Damage": "27",
         "SUF": "15~16 RBT (16~)",
         "BF": "-6~-5",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -4230,8 +4230,8 @@
         "Damage": "17",
         "SUF": "15~16",
         "BF": "-7~-6",
-        "HF": "Launch (JG?)(+4)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?) (+4)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -4307,8 +4307,8 @@
         "Damage": "20",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -4341,7 +4341,7 @@
         "SUF": "17(26~)",
         "BF": "-9",
         "HF": "+2",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -4351,8 +4351,8 @@
         "Damage": "27",
         "SUF": "18(27~)",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {

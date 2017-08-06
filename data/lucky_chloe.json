@@ -116,8 +116,8 @@
         "Damage": "17,16",
         "SUF": "15",
         "BF": "-14?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -292,8 +292,8 @@
         "Damage": "14",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -303,8 +303,8 @@
         "Damage": "20",
         "SUF": "16",
         "BF": "-13?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -369,8 +369,8 @@
         "Damage": "",
         "SUF": "27",
         "BF": "+?s",
-        "HF": "KND?(Launch)",
-        "CHF": "KND?(Launch)",
+        "HF": "KND?(JG)",
+        "CHF": "KND?(JG)",
         "Notes": "Rage art"
     },
     {
@@ -490,8 +490,8 @@
         "Damage": "",
         "SUF": "26",
         "BF": "-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -502,7 +502,7 @@
         "SUF": "17",
         "BF": "-13",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -578,8 +578,8 @@
         "Damage": "18(15.12)",
         "SUF": "15",
         "BF": "-17",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -655,8 +655,8 @@
         "Damage": "10,10",
         "SUF": "14",
         "BF": "-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -666,8 +666,8 @@
         "Damage": "20",
         "SUF": "16",
         "BF": "-13?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -721,8 +721,8 @@
         "Damage": "12,12,25",
         "SUF": "17",
         "BF": "+4?s",
-        "HF": "KND?(Launch)",
-        "CHF": "KND?(Launch)",
+        "HF": "KND?(JG)",
+        "CHF": "KND?(JG)",
         "Notes": "Rage art"
     },
     {
@@ -1129,7 +1129,7 @@
         "SUF": "17",
         "BF": "-13",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1403,8 +1403,8 @@
         "Damage": "",
         "SUF": "16",
         "BF": "-13?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1491,8 +1491,8 @@
         "Damage": "",
         "SUF": "15",
         "BF": "-17",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1514,7 +1514,7 @@
         "SUF": "15",
         "BF": "-13?",
         "HF": "KND?",
-        "CHF": "Launch (JG?)?",
+        "CHF": "JG (JG?)?",
         "Notes": ""
     },
     {
@@ -1524,8 +1524,8 @@
         "Damage": "",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

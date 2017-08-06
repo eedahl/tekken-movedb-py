@@ -62,7 +62,7 @@
         "SUF": "10",
         "BF": "",
         "HF": "+",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -139,7 +139,7 @@
         "SUF": "12",
         "BF": "",
         "HF": "+",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -391,8 +391,8 @@
         "Damage": "10",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -457,8 +457,8 @@
         "Damage": "25",
         "SUF": "14",
         "BF": "-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": "PC"
     },
     {
@@ -491,7 +491,7 @@
         "SUF": "16",
         "BF": "",
         "HF": "+",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -765,8 +765,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1051,8 +1051,8 @@
         "Damage": "20",
         "SUF": "18",
         "BF": "-14",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1118,7 +1118,7 @@
         "SUF": "12",
         "BF": "",
         "HF": "+6",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1535,8 +1535,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1690,7 +1690,7 @@
         "SUF": "12(13~)",
         "BF": "",
         "HF": "+",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

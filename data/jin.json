@@ -447,7 +447,7 @@
         "SUF": "15~16",
         "BF": "-7~-6",
         "HF": "+4~+5a",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -600,8 +600,8 @@
         "Damage": "5,20",
         "SUF": "15,25~26",
         "BF": "-19~-18",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -821,7 +821,7 @@
         "SUF": "15~16",
         "BF": "-13~-12",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -831,8 +831,8 @@
         "Damage": "13",
         "SUF": "15~16",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1062,8 +1062,8 @@
         "Damage": "14",
         "SUF": "14",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1102,7 +1102,7 @@
     {
         "Character": "Jin",
         "Command": "d+1+2 (to ZEN)",
-        "Hit level": "(Special) (TC)(CDS)",
+        "Hit level": "(Special) (TC) (CDS)",
         "Damage": "",
         "SUF": "(10~)",
         "BF": "",
@@ -1113,7 +1113,7 @@
     {
         "Character": "Jin",
         "Command": "b+1 (to CDS)",
-        "Hit level": "(Special) (TC)(CDS)",
+        "Hit level": "(Special) (TC) (CDS)",
         "Damage": "",
         "SUF": "(5~)",
         "BF": "",
@@ -1205,8 +1205,8 @@
         "Damage": "10,27",
         "SUF": "13,29(18~)",
         "BF": "-13?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1234,7 +1234,7 @@
     {
         "Character": "Jin",
         "Command": "f, n, d, d/f, u/f (to jump)",
-        "Hit level": "(Special) (TJ)(Crouch dash)",
+        "Hit level": "(Special) (TJ) (Crouch dash)",
         "Damage": "",
         "SUF": "22~27 (27~)",
         "BF": "",
@@ -1249,8 +1249,8 @@
         "Damage": "20",
         "SUF": "16(20~)",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1260,8 +1260,8 @@
         "Damage": "22",
         "SUF": "16(19~)",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1293,8 +1293,8 @@
         "Damage": "24,35",
         "SUF": "11(14~)",
         "BF": "+?",
-        "HF": "Launch(Launch (JG?))",
-        "CHF": "Launch(Launch (JG?))",
+        "HF": "JG(JG (JG?))",
+        "CHF": "JG(JG (JG?))",
         "Notes": "Rage art"
     },
     {
@@ -1304,8 +1304,8 @@
         "Damage": "24,35",
         "SUF": "11(14~)",
         "BF": "+?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": "Rage art"
     },
     {
@@ -1399,7 +1399,7 @@
     {
         "Character": "Jin",
         "Command": "b+1 (to CDS)",
-        "Hit level": "(Special) (TC)(CDS)",
+        "Hit level": "(Special) (TC) (CDS)",
         "Damage": "",
         "SUF": "13~14",
         "BF": "",
@@ -1678,8 +1678,8 @@
         "Damage": "14",
         "SUF": "14",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1811,7 +1811,7 @@
         "SUF": "15~16",
         "BF": "-13~-12",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1821,8 +1821,8 @@
         "Damage": "13",
         "SUF": "15~16",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

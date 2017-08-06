@@ -277,23 +277,23 @@
     {
         "Character": "Devil Jin",
         "Command": "f+4, 3",
-        "Hit level": "m, m (TJ),  (TC)",
+        "Hit level": "m, m (TJ), (TC)",
         "Damage": "13,20",
         "SUF": "15~16 Air",
         "BF": "-33~-32",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
         "Character": "Devil Jin",
         "Command": "f+4, 3, U",
-        "Hit level": "m, m (TJ), (Special) (TJ)(FLY)",
+        "Hit level": "m, m (TJ), (Special) (TJ) (FLY)",
         "Damage": "13,20",
         "SUF": "15~16 Air",
         "BF": "-20~-19 (-93~-92)",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -380,19 +380,19 @@
         "Damage": "13,10,21",
         "SUF": "16 Air",
         "BF": "-33~-32",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
         "Character": "Devil Jin",
         "Command": "d/f+3, 2, 4, U",
-        "Hit level": "m, m, m (TJ), (Special) (TJ)(FLY)",
+        "Hit level": "m, m, m (TJ), (Special) (TJ) (FLY)",
         "Damage": "13,10,21",
         "SUF": "16 Air",
         "BF": "-20~-19 (-93~-92)",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -457,8 +457,8 @@
         "Damage": "6,27",
         "SUF": "15,30",
         "BF": "-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -610,9 +610,9 @@
         "Hit level": "!",
         "Damage": "40",
         "SUF": "43~44 Air",
-        "BF": "Launch",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "BF": "JG",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -621,9 +621,9 @@
         "Hit level": "!",
         "Damage": "67",
         "SUF": "63 Air",
-        "BF": "Launch",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "BF": "JG",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -644,19 +644,19 @@
         "Damage": "27",
         "SUF": "20~21 Air",
         "BF": "-36~-35",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
         "Character": "Devil Jin",
         "Command": "u+4, U",
-        "Hit level": "m (TJ), (Special) (TJ)(FLY)",
+        "Hit level": "m (TJ), (Special) (TJ) (FLY)",
         "Damage": "27",
         "SUF": "20~21 Air",
         "BF": "-23~-22 (-71~-70)",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -886,8 +886,8 @@
         "Damage": "16,16,13",
         "SUF": "15~16 (15~)",
         "BF": "-14",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -985,8 +985,8 @@
         "Damage": "33",
         "SUF": "17(26~)",
         "BF": "-22",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1014,7 +1014,7 @@
     {
         "Character": "Devil Jin",
         "Command": "Grounded face up u+3+4",
-        "Hit level": "(Special) (TJ)(FLY)",
+        "Hit level": "(Special) (TJ) (FLY)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1036,7 +1036,7 @@
     {
         "Character": "Devil Jin",
         "Command": "3+4 or From certain moves (to FLY)",
-        "Hit level": "(Special) (TJ)(FLY)",
+        "Hit level": "(Special) (TJ) (FLY)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1058,7 +1058,7 @@
     {
         "Character": "Devil Jin",
         "Command": "FLY 2",
-        "Hit level": "h! (TJ)(, (throw))",
+        "Hit level": "h! (TJ) (, (throw))",
         "Damage": "27(,30)",
         "SUF": "36 Air(76~)",
         "BF": "",
@@ -1139,8 +1139,8 @@
         "Damage": "33",
         "SUF": "23(26~)",
         "BF": "-15",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1183,8 +1183,8 @@
         "Damage": "31",
         "SUF": "11(15~)",
         "BF": "-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1194,8 +1194,8 @@
         "Damage": "31",
         "SUF": "11(14~)",
         "BF": "+5",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1624,7 +1624,7 @@
         "SUF": "15",
         "BF": "-7",
         "HF": "+4",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1711,8 +1711,8 @@
         "Damage": "27",
         "SUF": "20~21 Air",
         "BF": "-36~-35",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1744,8 +1744,8 @@
         "Damage": "33",
         "SUF": "17(26~)",
         "BF": "-22",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {

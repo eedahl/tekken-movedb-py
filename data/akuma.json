@@ -189,7 +189,7 @@
     {
         "Character": "Akuma",
         "Command": "f+3+4",
-        "Hit level": "m (TJ)(TPORT)",
+        "Hit level": "m (TJ) (TPORT)",
         "Damage": "20",
         "SUF": "22",
         "BF": "-9",
@@ -248,8 +248,8 @@
         "Damage": "10,10",
         "SUF": "16",
         "BF": "-17?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -479,8 +479,8 @@
         "Damage": "17",
         "SUF": "15",
         "BF": "-15?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -721,8 +721,8 @@
         "Damage": "14",
         "SUF": "10",
         "BF": "-24~?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -732,8 +732,8 @@
         "Damage": "6,6,20?",
         "SUF": "11",
         "BF": "-24~ (~16?a)",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -754,14 +754,14 @@
         "Damage": "6,6",
         "SUF": "11",
         "BF": "",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
         "Character": "Akuma",
         "Command": "f, d, d/f+3(or 4)",
-        "Hit level": "(Special) (TJ)(DFLIP)",
+        "Hit level": "(Special) (TJ) (DFLIP)",
         "Damage": "",
         "SUF": "11",
         "BF": "",
@@ -919,8 +919,8 @@
         "Damage": "",
         "SUF": "13",
         "BF": "",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": "Tail spin"
     },
     {
@@ -1348,8 +1348,8 @@
         "Damage": "17",
         "SUF": "15",
         "BF": "-15?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

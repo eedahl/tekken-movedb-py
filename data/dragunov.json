@@ -359,7 +359,7 @@
         "SUF": "14~15",
         "BF": "-11",
         "HF": "0",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -424,8 +424,8 @@
         "Damage": "14",
         "SUF": "15~16",
         "BF": "-12~-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -453,7 +453,7 @@
     {
         "Character": "Dragunov",
         "Command": "d/f+1+2 or FC+d/f+1+2",
-        "Hit level": "(Special)(Low counter)",
+        "Hit level": "(Special) (Low counter)",
         "Damage": "30",
         "SUF": "17~20( RC)",
         "BF": "",
@@ -941,8 +941,8 @@
         "Damage": "21",
         "SUF": "26(26~)",
         "BF": "-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -963,8 +963,8 @@
         "Damage": "30",
         "SUF": "15~17 (18~)",
         "BF": "+1?s",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": "Rage art"
     },
     {
@@ -1051,8 +1051,8 @@
         "Damage": "15",
         "SUF": "15",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1227,8 +1227,8 @@
         "Damage": "25",
         "SUF": "18(20~)",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1623,8 +1623,8 @@
         "Damage": "15",
         "SUF": "15",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

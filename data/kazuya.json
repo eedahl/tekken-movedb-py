@@ -522,9 +522,9 @@
         "Hit level": "!",
         "Damage": "30",
         "SUF": "43",
-        "BF": "Launch",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "BF": "JG",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -533,9 +533,9 @@
         "Hit level": "!",
         "Damage": "60",
         "SUF": "63",
-        "BF": "Launch",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "BF": "JG",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -655,8 +655,8 @@
         "Damage": "10,12",
         "SUF": "13",
         "BF": "-12?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -776,8 +776,8 @@
         "Damage": "23",
         "SUF": "11(14~)",
         "BF": "-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -787,8 +787,8 @@
         "Damage": "23",
         "SUF": "11(13~)",
         "BF": "+5",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -798,8 +798,8 @@
         "Damage": "30",
         "SUF": "23~24 (25~)",
         "BF": "-15~-14",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -842,8 +842,8 @@
         "Damage": "23",
         "SUF": "11(15~)",
         "BF": "-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -853,8 +853,8 @@
         "Damage": "23",
         "SUF": "11(14~)",
         "BF": "+5",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -864,8 +864,8 @@
         "Damage": "30",
         "SUF": "23~24 (26~)",
         "BF": "-15~-14",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -875,14 +875,14 @@
         "Damage": "45",
         "SUF": "19?",
         "BF": "+2~+4?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": "Rage art"
     },
     {
         "Character": "Kazuya",
         "Command": "in rage f, n, d, d/f+1+4, u/f (Only when hit )",
-        "Hit level": "m(, (throw))(DVK)",
+        "Hit level": "m(, (throw)) (DVK)",
         "Damage": "45,18",
         "SUF": "19?",
         "BF": "",
@@ -1029,8 +1029,8 @@
         "Damage": "12,12",
         "SUF": "15~16",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1073,8 +1073,8 @@
         "Damage": "23",
         "SUF": "11(14~)",
         "BF": "-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1106,8 +1106,8 @@
         "Damage": "16,28,20",
         "SUF": "16(19~)",
         "BF": "-15?",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1128,8 +1128,8 @@
         "Damage": "25",
         "SUF": "17(26~)",
         "BF": "-22",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {

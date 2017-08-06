@@ -138,8 +138,8 @@
         "Damage": "13,13,28",
         "SUF": "28~30,37 (29~) RC",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -237,8 +237,8 @@
         "Damage": "16,22",
         "SUF": "12,35",
         "BF": "-23",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -255,7 +255,7 @@
     {
         "Character": "Eddy",
         "Command": "3+4, B (Cancel)",
-        "Hit level": "(Special) (TC)(HSP)",
+        "Hit level": "(Special) (TC) (HSP)",
         "Damage": "",
         "SUF": "36~40",
         "BF": "",
@@ -436,7 +436,7 @@
         "SUF": "14~15",
         "BF": "-10~-9",
         "HF": "SH",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -479,8 +479,8 @@
         "Damage": "22",
         "SUF": "16",
         "BF": "-23",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -512,8 +512,8 @@
         "Damage": "28",
         "SUF": "20 Air(22~)",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -567,8 +567,8 @@
         "Damage": "17,29",
         "SUF": "18",
         "BF": "-23",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -655,8 +655,8 @@
         "Damage": "13,28",
         "SUF": "23 Air",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -743,8 +743,8 @@
         "Damage": "16",
         "SUF": "30~31",
         "BF": "-7~-6",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -864,8 +864,8 @@
         "Damage": "13,28",
         "SUF": "13 Air",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1051,8 +1051,8 @@
         "Damage": "33,22",
         "SUF": "26~27",
         "BF": "-23",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1183,8 +1183,8 @@
         "Damage": "40,27",
         "SUF": "26~27 (27~) Air",
         "BF": "-9",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1194,8 +1194,8 @@
         "Damage": "33",
         "SUF": "19~20 (20~)",
         "BF": "-11~10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1260,8 +1260,8 @@
         "Damage": "9,27",
         "SUF": "13 Air",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1282,8 +1282,8 @@
         "Damage": "16",
         "SUF": "15",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1293,8 +1293,8 @@
         "Damage": "20",
         "SUF": "19~20a (19~)",
         "BF": "-12~-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1432,7 +1432,7 @@
     {
         "Character": "Eddy",
         "Command": "SS 3, D (Cancel)",
-        "Hit level": "(Special) (TC)(RLX)",
+        "Hit level": "(Special) (TC) (RLX)",
         "Damage": "",
         "SUF": "25~26 (26~)",
         "BF": "",
@@ -1443,7 +1443,7 @@
     {
         "Character": "Eddy",
         "Command": "SS 3, B (Cancel)",
-        "Hit level": "(Special) (TC)(HSP)",
+        "Hit level": "(Special) (TC) (HSP)",
         "Damage": "",
         "SUF": "25~26 (26~)",
         "BF": "",
@@ -1469,8 +1469,8 @@
         "Damage": "22,27",
         "SUF": "25~26 (26~) Air",
         "BF": "-9",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1898,8 +1898,8 @@
         "Damage": "27",
         "SUF": "16 Air(26~)",
         "BF": "-9",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1916,7 +1916,7 @@
     {
         "Character": "Eddy",
         "Command": "HSP u or d 3 or 4",
-        "Hit level": "(Special), l (TC)(HSP)",
+        "Hit level": "(Special), l (TC) (HSP)",
         "Damage": "33",
         "SUF": "36 RC(46~)",
         "BF": "-45",
@@ -2041,8 +2041,8 @@
         "Damage": "20,20",
         "SUF": "20~22",
         "BF": "-12~-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2096,8 +2096,8 @@
         "Damage": "27",
         "SUF": "17~18 Air (18~)",
         "BF": "-24~-23",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2393,8 +2393,8 @@
         "Damage": "33",
         "SUF": "19~20 (20~)",
         "BF": "-11~10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2558,8 +2558,8 @@
         "Damage": "16",
         "SUF": "15",
         "BF": "-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2569,8 +2569,8 @@
         "Damage": "20",
         "SUF": "19~20",
         "BF": "-12~-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

@@ -39,10 +39,6 @@ from tk_ToolTip import CreateToolTip
 df = None
 table = None
 
-#
-move_files = None
-char_names = None
-
 # Column names
 CHAR = 'Character'
 CMD = 'Command'
@@ -96,7 +92,7 @@ def char_names_from_filenames(filenames):
 
 
 # TODO(edahl): Make the dump file logic
-def save_movelist():
+def save_movelist(move_files, char_names):
     if getattr(sys, 'frozen', False):
         script_dir = os.path.dirname(sys.executable)
     else:
@@ -119,22 +115,42 @@ def filter_data():
     # df.drop([Column Name or list],inplace=True,axis=1)
 
     def f(x: pandas.core.series.Series):
+        if not active_characters[x[CHAR]].get() == 1:
+            return False
+        elif not (command_filter.get() == '' or x[CMD] == command_filter.get()):
+            return False
+        elif not (hl_filter.get() == '' or re.match(hl_filter.get(), x[HL]) is not None):
+            return False
+
+        # TODO(edahl):
+        # TODO(edahl): improvements to frame filters
+        #              search input for < or >;
+        #              check if followed by a signed number;
+        #              search cell for any signed number and compare;
+        #              or the result
+        #              ... check for other tokens
+
         suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
+        if not (suf_filter.get() == '' or re.match(suf, x[SUF]) is not None):
+            return False
+
         bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
+        if not (bf_filter.get() == '' or re.search(bf, x[BF]) is not None):
+            return False
+
         hf = '(?={0})[^0-9]*'.format(re.escape(hf_filter.get()))
+        if not (hf_filter.get() == '' or re.search(hf, x[HF]) is not None):
+            return False
+
         chf = '(?={0})[^0-9]*'.format(re.escape(chf_filter.get()))
+        if not (chf_filter.get() == '' or re.search(chf, x[CHF]) is not None):
+            return False
+
         notes = '(?={0})'.format(re.escape(notes_filter.get()))
+        if not (notes_filter.get() == '' or re.search(notes, x[NOTES], re.IGNORECASE) is not None):
+            return False
 
-        b = ((active_characters[x[CHAR]].get() == 1) and
-             (command_filter.get() == '' or x[CMD] == command_filter.get()) and
-             (hl_filter.get() == '' or re.match(hl_filter.get(), x[HL]) is not None) and
-             (suf_filter.get() == '' or re.match(suf, x[SUF]) is not None) and
-             (bf_filter.get() == '' or re.search(bf, x[BF]) is not None) and
-             (hf_filter.get() == '' or re.search(hf, x[HF]) is not None) and
-             (chf_filter.get() == '' or re.search(chf, x[CHF]) is not None) and
-             (notes_filter.get() == '' or re.search(notes, x[NOTES], re.IGNORECASE) is not None))
-
-        return b
+        return True
 
     tf = df[df[[CHAR, CMD, HL, SUF, BF, HF, CHF, NOTES]].apply(f, axis=1)]
 
@@ -177,6 +193,15 @@ def make_column_filter_frame(root):
     global hf_filter
     global chf_filter
     global notes_filter
+
+    command_filter = StringVar()
+    hl_filter = StringVar()
+    suf_filter = StringVar()
+    bf_filter = StringVar()
+    hf_filter = StringVar()
+    chf_filter = StringVar()
+    notes_filter = StringVar()
+
     # Entry fields and labels
     variables = [command_filter, hl_filter, suf_filter, bf_filter, hf_filter, chf_filter, notes_filter]
     texts = ['Command', 'HL', 'SUF', 'BF', 'HF', 'CHF', 'Notes']
@@ -201,9 +226,11 @@ def make_column_filter_frame(root):
     for v, t, tt in zip(variables, texts, tooltips):
         label = ttk.Label(column_filters, text=t)
         label.pack(side=LEFT)
-        entry = ttk.Entry(column_filters, textvariable=command_filter)
+        entry = ttk.Entry(column_filters, textvariable=v)
         CreateToolTip(entry, tt)
         entry.pack(side=LEFT, padx=5)
+
+    print(command_filter)
 
     # Buttons
     button_frame = ttk.Frame(column_filters)
@@ -211,7 +238,7 @@ def make_column_filter_frame(root):
     texts = ['Filter', 'Clear filters']
     underlines = [1, 1]
     tooltips = ['Ctrl+E', 'Ctrl+L']
-    commands = [filter_data, clear_filters]
+    commands = [lambda: filter_data(), lambda: clear_filters()]
 
     assert(len(texts) == len(underlines) == len(tooltips) == len(commands))
 
@@ -227,7 +254,7 @@ def make_column_filter_frame(root):
 
 def make_table_frame(root):
     table_frame = ttk.Frame(root)
-    table_frame.pack(fill=BOTH, expand=1)
+    table_frame.pack(side=BOTTOM, fill=BOTH, expand=1)
 
     display_df = df
 
@@ -251,8 +278,7 @@ def set_char_buttons(val):
         x.set(val)
 
 
-def make_character_cascade(menu):
-    global char_names
+def make_character_cascade(menu, char_names):
     character_menu = Menu(menu)
     menu.add_cascade(label='Characters', menu=character_menu)
 
@@ -262,8 +288,6 @@ def make_character_cascade(menu):
                                command=lambda: set_char_buttons(1))
     character_menu.add_separator()
 
-    global move_files
-    char_names = char_names_from_filenames(move_files)
     global active_characters
     for x in char_names:
         y = IntVar()
@@ -274,10 +298,10 @@ def make_character_cascade(menu):
 
 def main():
     # Load moves
-    global move_files
+    # global move_files
     move_files = os.listdir('./data/')
 
-    global char_names
+    # global char_names
     char_names = char_names_from_filenames(move_files)
 
     data = [load_moves_by_filename(x) for x in move_files]
@@ -302,7 +326,9 @@ def main():
     # File menu
     file_menu = Menu(menu)
     menu.add_cascade(label="File", menu=file_menu)
-    file_menu.add_command(label='Save', underline=0, accelerator="Ctrl+S", command=save_movelist)
+    file_menu.add_command(label='Save', underline=0, accelerator="Ctrl+S",
+                          command=lambda: save_movelist(move_files, char_names))
+
     file_menu.add_separator()
     file_menu.add_command(label="Exit", command=lambda: sys.exit(1))
 
@@ -314,24 +340,23 @@ def main():
         view_menu.add_checkbutton(label='Hide ' + col, state=DISABLED)
 
     # Characters menu GUI
-    make_character_cascade(menu)
+    make_character_cascade(menu, char_names)
 
     # Help menu
     help_menu = Menu(menu)
     menu.add_cascade(label="Help", menu=help_menu)
     help_menu.add_command(label="Legend", accelerator='F1', command=lambda: open_legend(root))
 
-    make_column_filter_frame(root)
     make_table_frame(root)
+    make_column_filter_frame(root)
 
     # Binds
     root.bind_all('<Control-l>', lambda event=None: clear_filters())
     root.bind_all('<Control-i>', lambda event=None: filter_data())
-    # root.bind_all('<Return>', lambda event=None: filter_data())
     root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(0))
     root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(1))
     root.bind_all('<F1>', lambda event=None: open_legend(root))
-    root.bind_all('<Control-s>', lambda event=None: save_movelist)
+    root.bind_all('<Control-s>', lambda event=None: save_movelist(move_files, char_names))
 
     root.mainloop()
 

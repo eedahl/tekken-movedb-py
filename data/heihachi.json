@@ -116,8 +116,8 @@
         "Damage": "9,28,27",
         "SUF": "10 Air",
         "BF": "-27~-24",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -589,8 +589,8 @@
         "Damage": "33",
         "SUF": "20(21~)",
         "BF": "-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -827,7 +827,7 @@
     {
         "Character": "Heihachi",
         "Command": "f+3+4",
-        "Hit level": "(Special)(h or m punch parry)(RAI)",
+        "Hit level": "(Special) (h or m punch parry) (RAI)",
         "Damage": "",
         "SUF": "(5~)",
         "BF": "",
@@ -908,8 +908,8 @@
         "Damage": "27",
         "SUF": "11(15~)",
         "BF": "-10",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -919,8 +919,8 @@
         "Damage": "31",
         "SUF": "11(14~)",
         "BF": "+5",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -930,8 +930,8 @@
         "Damage": "33",
         "SUF": "19~20( Air) (22~)",
         "BF": "-15~-14",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -941,8 +941,8 @@
         "Damage": "40",
         "SUF": "19~20( Air) (21~)",
         "BF": "-9~-8",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1051,8 +1051,8 @@
         "Damage": "27",
         "SUF": "21(24~) Air",
         "BF": "-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1194,8 +1194,8 @@
         "Damage": "33",
         "SUF": "20(21~)",
         "BF": "-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1415,7 +1415,7 @@
         "SUF": "15~16",
         "BF": "-7~-6",
         "HF": "+4~+5",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1503,7 +1503,7 @@
         "SUF": "15",
         "BF": "-13",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

@@ -281,8 +281,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-7",
-        "HF": "Launch (JG?)(+4?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?) (+4?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -545,8 +545,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -556,8 +556,8 @@
         "Damage": "",
         "SUF": "",
         "BF": "-13?",
-        "HF": "Throw(Launch)",
-        "CHF": "Throw(Launch)",
+        "HF": "Throw(JG)",
+        "CHF": "Throw(JG)",
         "Notes": ""
     },
     {
@@ -629,7 +629,7 @@
     {
         "Character": "Shaheen",
         "Command": "FC+d/f, d, D/F+3 (Close)",
-        "Hit level": "l(, (Special))(SNK)",
+        "Hit level": "l(, (Special)) (SNK)",
         "Damage": "24",
         "SUF": "13 RG",
         "BF": "",
@@ -640,7 +640,7 @@
     {
         "Character": "Shaheen",
         "Command": "FC+d/f, d, D/F+3",
-        "Hit level": "l(, (Special))(SNK)",
+        "Hit level": "l(, (Special)) (SNK)",
         "Damage": "",
         "SUF": " RG",
         "BF": "",
@@ -699,14 +699,14 @@
         "Damage": "",
         "SUF": "",
         "BF": "-14",
-        "HF": "Throw(Launch)",
-        "CHF": "Throw(Launch)",
+        "HF": "Throw(JG)",
+        "CHF": "Throw(JG)",
         "Notes": ""
     },
     {
         "Character": "Shaheen",
         "Command": "SNK 4",
-        "Hit level": "l(, (Special))(SNK)",
+        "Hit level": "l(, (Special)) (SNK)",
         "Damage": "18",
         "SUF": "s",
         "BF": "-19~?",
@@ -875,8 +875,8 @@
         "Damage": "",
         "SUF": "",
         "BF": "-13?",
-        "HF": "Throw(Launch)",
-        "CHF": "Throw(Launch)",
+        "HF": "Throw(JG)",
+        "CHF": "Throw(JG)",
         "Notes": ""
     },
     {
@@ -1172,8 +1172,8 @@
         "Damage": "13",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

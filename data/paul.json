@@ -381,7 +381,7 @@
         "SUF": "19~20?",
         "BF": "-11~-10?",
         "HF": "KND",
-        "CHF": "Launch",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -501,8 +501,8 @@
         "Damage": "16",
         "SUF": "15~16",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -512,8 +512,8 @@
         "Damage": "17",
         "SUF": "15~16",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -523,8 +523,8 @@
         "Damage": "18",
         "SUF": "15~16",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -534,8 +534,8 @@
         "Damage": "18,27",
         "SUF": "15~16",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -578,8 +578,8 @@
         "Damage": "18,28",
         "SUF": "15(16~)",
         "BF": "-19",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -611,8 +611,8 @@
         "Damage": "22",
         "SUF": "15~16 (16~)",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -622,8 +622,8 @@
         "Damage": "22,20",
         "SUF": "15~16 (16~)",
         "BF": "-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -699,8 +699,8 @@
         "Damage": "27",
         "SUF": "16~17",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -765,8 +765,8 @@
         "Damage": "64",
         "SUF": "14~15",
         "BF": "-49~-48",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -897,8 +897,8 @@
         "Damage": "40",
         "SUF": "19~20 (21~)",
         "BF": "-9~-8",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -996,8 +996,8 @@
         "Damage": "29",
         "SUF": "18~19 (20~)",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1030,7 +1030,7 @@
         "SUF": "12",
         "BF": "-8",
         "HF": "+7",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1118,7 +1118,7 @@
         "SUF": "12",
         "BF": "-8",
         "HF": "+7",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1150,8 +1150,8 @@
         "Damage": "22",
         "SUF": "15~16 (16~)",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1239,7 +1239,7 @@
         "SUF": "19~20?",
         "BF": "-11~-10?",
         "HF": "KND",
-        "CHF": "Launch",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1326,8 +1326,8 @@
         "Damage": "27",
         "SUF": "16~17",
         "BF": "-14~-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1370,8 +1370,8 @@
         "Damage": "17",
         "SUF": "15",
         "BF": "-8",
-        "HF": "Launch (JG?) (+3)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?) (+3)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1447,8 +1447,8 @@
         "Damage": "16",
         "SUF": "15~16",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1458,8 +1458,8 @@
         "Damage": "17",
         "SUF": "15~16",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1469,8 +1469,8 @@
         "Damage": "18",
         "SUF": "15~16",
         "BF": "-17~-16",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1492,7 +1492,7 @@
         "SUF": "15",
         "BF": "-13",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1502,8 +1502,8 @@
         "Damage": "17",
         "SUF": "15",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1513,8 +1513,8 @@
         "Damage": "33+",
         "SUF": "23",
         "BF": "-11",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1558,7 +1558,7 @@
         "SUF": "12(13~)",
         "BF": "-8",
         "HF": "+7",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

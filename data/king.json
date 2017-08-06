@@ -204,8 +204,8 @@
         "Damage": "16,22,21",
         "SUF": "15",
         "BF": "-15",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -420,7 +420,7 @@
     {
         "Character": "King",
         "Command": "d/f+3+4 (Close)",
-        "Hit level": "Sm (TJ)(, h(Throw))",
+        "Hit level": "Sm (TJ) (, h(Throw))",
         "Damage": "20(,30)",
         "SUF": "28 RG( RBT)",
         "BF": "Throw(KND)",
@@ -479,14 +479,14 @@
         "Damage": "28",
         "SUF": "25",
         "BF": "-20",
-        "HF": "Launch(JG?)",
-        "CHF": "Launch(JG?)",
+        "HF": "JG(JG?)",
+        "CHF": "JG(JG?)",
         "Notes": ""
     },
     {
         "Character": "King",
         "Command": "d+3+4 or FC+d/f+4",
-        "Hit level": "l (TC)(ALI)",
+        "Hit level": "l (TC) (ALI)",
         "Damage": "18",
         "SUF": "16 RC",
         "BF": "-25",
@@ -497,7 +497,7 @@
     {
         "Character": "King",
         "Command": "2+4+4",
-        "Hit level": "l (TC)(ALI)",
+        "Hit level": "l (TC) (ALI)",
         "Damage": "29",
         "SUF": "14 RC",
         "BF": "-25",
@@ -508,7 +508,7 @@
     {
         "Character": "King",
         "Command": "d+3+4, 4",
-        "Hit level": "l (TC), l (TC)(ALI)",
+        "Hit level": "l (TC), l (TC) (ALI)",
         "Damage": "18,9",
         "SUF": "14 RC",
         "BF": "-25",
@@ -600,8 +600,8 @@
         "Damage": "",
         "SUF": "20~22?",
         "BF": "+8?s",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": "Rage art"
     },
     {
@@ -728,7 +728,7 @@
     {
         "Character": "King",
         "Command": "u+2",
-        "Hit level": "m (TJ)(?)",
+        "Hit level": "m (TJ) (?)",
         "Damage": "47",
         "SUF": "48~52 RG",
         "BF": "-18~-14 OC",
@@ -739,7 +739,7 @@
     {
         "Character": "King",
         "Command": "u/f+2",
-        "Hit level": "m (TJ)(?)",
+        "Hit level": "m (TJ) (?)",
         "Damage": "47",
         "SUF": "48~52 RG",
         "BF": "-18~-14 OC",
@@ -788,7 +788,7 @@
         "SUF": "15",
         "BF": "-13",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -798,8 +798,8 @@
         "Damage": "17",
         "SUF": "15~16",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1007,8 +1007,8 @@
         "Damage": "24",
         "SUF": "18~19",
         "BF": "-10~-9?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1091,7 +1091,7 @@
     {
         "Character": "King",
         "Command": "3+4 (to JGS)",
-        "Hit level": "(Special) (TJ)(JGS)",
+        "Hit level": "(Special) (TJ) (JGS)",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1102,7 +1102,7 @@
     {
         "Character": "King",
         "Command": "b+3+4 (to JGS (backwards))",
-        "Hit level": "(Special) (TJ)(JGS (backwards))",
+        "Hit level": "(Special) (TJ) (JGS (backwards))",
         "Damage": "",
         "SUF": " Air",
         "BF": "",
@@ -1514,7 +1514,7 @@
         "SUF": "13",
         "BF": "-5",
         "HF": "+6",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1894,7 +1894,7 @@
     {
         "Character": "King",
         "Command": "u+2",
-        "Hit level": "m (TJ)(?)",
+        "Hit level": "m (TJ) (?)",
         "Damage": "47",
         "SUF": "48~52 RG",
         "BF": "-18~-14 OC",
@@ -1905,7 +1905,7 @@
     {
         "Character": "King",
         "Command": "u/f+2",
-        "Hit level": "m (TJ)(?)",
+        "Hit level": "m (TJ) (?)",
         "Damage": "47",
         "SUF": "48~52 RG",
         "BF": "-18~-14 OC",
@@ -1965,7 +1965,7 @@
         "SUF": "15",
         "BF": "-13",
         "HF": "KND",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1975,8 +1975,8 @@
         "Damage": "17",
         "SUF": "15~16",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2020,7 +2020,7 @@
         "SUF": "13(14~)",
         "BF": "-5",
         "HF": "+6",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {

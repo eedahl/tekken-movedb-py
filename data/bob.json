@@ -95,7 +95,7 @@
         "SUF": "10",
         "BF": "-6",
         "HF": "+5",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -172,7 +172,7 @@
         "SUF": "13",
         "BF": "-7",
         "HF": "+7",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -222,7 +222,7 @@
     {
         "Character": "Bob",
         "Command": "1+2, F",
-        "Hit level": "m, (Special) (TC)(BAL)",
+        "Hit level": "m, (Special) (TC) (BAL)",
         "Damage": "18",
         "SUF": "19~20s",
         "BF": "+7~+8s",
@@ -233,7 +233,7 @@
     {
         "Character": "Bob",
         "Command": "1+2, F (After stance ends)",
-        "Hit level": "m, (Special) (TC)(BAL)",
+        "Hit level": "m, (Special) (TC) (BAL)",
         "Damage": "18",
         "SUF": "19~20s",
         "BF": "-19~-18s",
@@ -244,7 +244,7 @@
     {
         "Character": "Bob",
         "Command": "1+2, B",
-        "Hit level": "m, (Special) (TC)(BAL)",
+        "Hit level": "m, (Special) (TC) (BAL)",
         "Damage": "18",
         "SUF": "19~20s",
         "BF": "-35~-34s",
@@ -381,7 +381,7 @@
         "SUF": "15~16",
         "BF": "-8~-7",
         "HF": "+8~+9a",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -644,8 +644,8 @@
         "Damage": "12,20",
         "SUF": "15~16, 24~25",
         "BF": "-11~-10",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -655,8 +655,8 @@
         "Damage": "12",
         "SUF": "15~16",
         "BF": "-20~-19",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -754,8 +754,8 @@
         "Damage": "16",
         "SUF": "18",
         "BF": "-13",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -952,8 +952,8 @@
         "Damage": "14,20",
         "SUF": "15~16, 24~25",
         "BF": "-13~-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -963,8 +963,8 @@
         "Damage": "14",
         "SUF": "15~16",
         "BF": "-22~-21",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -974,8 +974,8 @@
         "Damage": "20",
         "SUF": "24~25",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -992,7 +992,7 @@
     {
         "Character": "Bob",
         "Command": "u+1+2, F",
-        "Hit level": "(Special) (TJ), (Special) (TC)(BAL)",
+        "Hit level": "(Special) (TJ), (Special) (TC) (BAL)",
         "Damage": "",
         "SUF": "s",
         "BF": "",
@@ -1003,7 +1003,7 @@
     {
         "Character": "Bob",
         "Command": "u+1+2, B",
-        "Hit level": "(Special) (TJ), (Special) (TC)(BAL)",
+        "Hit level": "(Special) (TJ), (Special) (TC) (BAL)",
         "Damage": "",
         "SUF": "s",
         "BF": "",
@@ -1051,8 +1051,8 @@
         "Damage": "20",
         "SUF": "20",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1300,7 +1300,7 @@
     {
         "Character": "Bob",
         "Command": "in rage f, f, F?, or 2+4+?",
-        "Hit level": "m (TJ), m (TJ), (Special) (TC)(BAL)",
+        "Hit level": "m (TJ), m (TJ), (Special) (TC) (BAL)",
         "Damage": ", s",
         "SUF": "26~33 (29~)",
         "BF": "+?s",
@@ -1359,8 +1359,8 @@
         "Damage": "10,12",
         "SUF": "14",
         "BF": "-20~-18?",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -1487,7 +1487,7 @@
     {
         "Character": "Bob",
         "Command": "f+3+4 (to BAL)",
-        "Hit level": "(Special) (TC)(BAL)",
+        "Hit level": "(Special) (TC) (BAL)",
         "Damage": "",
         "SUF": "s",
         "BF": "",
@@ -1590,8 +1590,8 @@
         "Damage": "24(,5)",
         "SUF": "16(19~)",
         "BF": "-20",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -1690,7 +1690,7 @@
         "SUF": "13",
         "BF": "-7",
         "HF": "+7",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2085,8 +2085,8 @@
         "Damage": "14,20",
         "SUF": "15~16, 24~25",
         "BF": "-13~-12",
-        "HF": "Launch",
-        "CHF": "Launch",
+        "HF": "JG",
+        "CHF": "JG",
         "Notes": ""
     },
     {
@@ -2096,8 +2096,8 @@
         "Damage": "14",
         "SUF": "15~16",
         "BF": "-22~-21",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2107,8 +2107,8 @@
         "Damage": "20",
         "SUF": "24~25",
         "BF": "-13~-12",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2129,8 +2129,8 @@
         "Damage": "20",
         "SUF": "20",
         "BF": "-13",
-        "HF": "Launch (JG?)",
-        "CHF": "Launch (JG?)",
+        "HF": "JG (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
@@ -2196,7 +2196,7 @@
         "SUF": "13(14~)",
         "BF": "-7",
         "HF": "+7",
-        "CHF": "Launch (JG?)",
+        "CHF": "JG (JG?)",
         "Notes": ""
     },
     {
