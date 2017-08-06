@@ -52,6 +52,7 @@ UBH - Move is unblockable, but hits high and can be evaded by crouching
 Additional coventions:
 s    - Opponent recovers crouching
 g    - Guard break (opponent can block, but not attack)
+RC   - Recover crouching after move
 KND  - Opponent is knocked down
 JG   - Move knocks opponent into the air, allowing for additional hits
 JGc  - Move juggles only on a Counter-Hit

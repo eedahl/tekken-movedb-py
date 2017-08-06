@@ -91,7 +91,7 @@ def char_names_from_filenames(filenames):
     return [char_name(x) for x in filenames]
 
 
-# TODO(edahl): Make the dump file logic
+# TODO(edahl): Sort out merging of sub-table into big table
 def save_movelist(move_files, char_names):
     if getattr(sys, 'frozen', False):
         script_dir = os.path.dirname(sys.executable)
@@ -106,6 +106,12 @@ def save_movelist(move_files, char_names):
             json.dump(data, outfile, indent=4, separators=(',', ': '))
 
 
+# TODO(edahl): improvements to frame filters
+#              search input for < or >;
+#              check if followed by a signed number;
+#              search cell for any signed number and compare;
+#              or the result
+#              ... check for other tokens
 def filter_data():
     global df
     global table
@@ -114,46 +120,69 @@ def filter_data():
     # df.drop(df.columns[[0, 1, 3]], axis=1)
     # df.drop([Column Name or list],inplace=True,axis=1)
 
-    def f(x: pandas.core.series.Series):
-        if not active_characters[x[CHAR]].get() == 1:
-            return False
-        elif not (command_filter.get() == '' or x[CMD] == command_filter.get()):
-            return False
-        elif not (hl_filter.get() == '' or re.match(hl_filter.get(), x[HL]) is not None):
+    def f(row: pandas.core.series.Series):
+        if not active_characters[row[CHAR]].get() == 1:
             return False
 
-        # TODO(edahl):
-        # TODO(edahl): improvements to frame filters
-        #              search input for < or >;
-        #              check if followed by a signed number;
-        #              search cell for any signed number and compare;
-        #              or the result
-        #              ... check for other tokens
+        if not (command_filter.get() == '' or row[CMD] == command_filter.get()):
+            return False
+
+        if not (hl_filter.get() == '' or re.match(hl_filter.get(), row[HL]) is not None):
+            return False
 
         suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
-        if not (suf_filter.get() == '' or re.match(suf, x[SUF]) is not None):
+        if not (suf_filter.get() == '' or re.search(suf, row[SUF]) is not None):
             return False
 
-        bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
-        if not (bf_filter.get() == '' or re.search(bf, x[BF]) is not None):
+        def compare(char, val1, val2):
+            x = int(val1)
+            y = int(val2)
+            if char == '<':
+                return x < y
+            elif char == '>':
+                return x > y
+            return x == y
+
+        # TODO(edahl): add "rest"
+        # Query input
+        query_pattern = '([<>])?([-+])?(\d+)'
+        res = re.search(query_pattern, bf_filter.get())
+        b = False
+        if res:
+            # TODO(edahl): edge case res == None
+            op = res.group(1)
+            query_num = res.group(2)+res.group(3)
+
+            # Query cell
+            sgn_num_pattern = '([-+]\d+)'
+            res = re.search(sgn_num_pattern, row[BF])
+            if res:
+                b = compare(op, res.group(0), query_num)
+
+        if not (bf_filter.get() == '' or b):
             return False
+
+        # bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
+        # if not (bf_filter.get() == '' or re.search(bf, row[BF]) is not None):
+        #     return False
 
         hf = '(?={0})[^0-9]*'.format(re.escape(hf_filter.get()))
-        if not (hf_filter.get() == '' or re.search(hf, x[HF]) is not None):
+        if not (hf_filter.get() == '' or re.search(hf, row[HF]) is not None):
             return False
 
         chf = '(?={0})[^0-9]*'.format(re.escape(chf_filter.get()))
-        if not (chf_filter.get() == '' or re.search(chf, x[CHF]) is not None):
+        if not (chf_filter.get() == '' or re.search(chf, row[CHF]) is not None):
             return False
 
         notes = '(?={0})'.format(re.escape(notes_filter.get()))
-        if not (notes_filter.get() == '' or re.search(notes, x[NOTES], re.IGNORECASE) is not None):
+        if not (notes_filter.get() == '' or re.search(notes, row[NOTES], re.IGNORECASE) is not None):
             return False
 
         return True
 
     tf = df[df[[CHAR, CMD, HL, SUF, BF, HF, CHF, NOTES]].apply(f, axis=1)]
 
+    # Preserve widths
     tmp_widths = table.model.columnwidths
     table.model = TableModel(tf)
     table.model.columnwidths = tmp_widths
@@ -230,8 +259,6 @@ def make_column_filter_frame(root):
         CreateToolTip(entry, tt)
         entry.pack(side=LEFT, padx=5)
 
-    print(command_filter)
-
     # Buttons
     button_frame = ttk.Frame(column_filters)
 
@@ -270,7 +297,7 @@ def make_table_frame(root):
     table.model.columnwidths[HF] = 70
     table.model.columnwidths[CHF] = 70
     table.model.columnwidths[DMG] = 70
-    table.model.columnwidths[NOTES] = 400
+    table.model.columnwidths[NOTES] = 450
 
 
 def set_char_buttons(val):
