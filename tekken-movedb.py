@@ -1,6 +1,7 @@
 import json
 import os
 from tkinter import *
+from tkinter import ttk
 
 import pandas
 from pandastable import Table, TableModel
@@ -96,10 +97,16 @@ def char_names_from_filenames(filenames):
 
 # TODO(edahl): Make the dump file logic
 def save_movelist():
+    if getattr(sys, 'frozen', False):
+        script_dir = os.path.dirname(sys.executable)
+    else:
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+
+    test_data_dir = os.path.join(script_dir, 'test_data')
     # data = df.to_json(orient='records')
     for file, char in zip(move_files, char_names):
         data = df[df[CHAR] == char].to_dict(orient='records')
-        with open('test_' + file, 'w') as outfile:
+        with open(os.path.join(test_data_dir, 'test_' + file), 'w') as outfile:
             json.dump(data, outfile, indent=4, separators=(',', ': '))
 
 
@@ -125,7 +132,7 @@ def filter_data():
              (bf_filter.get() == '' or re.search(bf, x[BF]) is not None) and
              (hf_filter.get() == '' or re.search(hf, x[HF]) is not None) and
              (chf_filter.get() == '' or re.search(chf, x[CHF]) is not None) and
-             (notes_filter.get() == '' or re.search(notes, x[NOTES]) is not None))
+             (notes_filter.get() == '' or re.search(notes, x[NOTES], re.IGNORECASE) is not None))
 
         return b
 
@@ -164,14 +171,14 @@ def open_legend(root):
 
 # TODO(edahl): Maybe put this into a class.
 def make_column_filter_frame(root):
-    column_filters = Frame(root)
+    column_filters = ttk.Frame(root)
 
     global command_filter
     command_filter = StringVar()
 
-    command_label = Label(column_filters, text="Command")
+    command_label = ttk.Label(column_filters, text="Command")
     command_label.pack(side=LEFT)
-    command_entry = Entry(column_filters, textvariable=command_filter)
+    command_entry = ttk.Entry(column_filters, textvariable=command_filter)
     CreateToolTip(command_entry, 'Matches the input to commands exactly.')
     command_entry.pack(side=LEFT)
 
@@ -180,25 +187,25 @@ def make_column_filter_frame(root):
 
     hl_label = Label(column_filters, text="Hit levels")
     hl_label.pack(side=LEFT)
-    hl_entry = Entry(column_filters, textvariable=hl_filter)
+    hl_entry = ttk.Entry(column_filters, textvariable=hl_filter)
     CreateToolTip(hl_entry, 'Matches the input to the beginning of hit levels.')
     hl_entry.pack(side=LEFT)
 
     global suf_filter
     suf_filter = StringVar()
 
-    suf_label = Label(column_filters, text="Start up frames")
+    suf_label = ttk.Label(column_filters, text="Start up frames")
     suf_label.pack(side=LEFT)
-    suf_entry = Entry(column_filters, textvariable=suf_filter)
+    suf_entry = ttk.Entry(column_filters, textvariable=suf_filter)
     CreateToolTip(suf_entry, 'Searches for the input in the start up frames column.\n')
     suf_entry.pack(side=LEFT)
 
     global bf_filter
     bf_filter = StringVar()
 
-    bf_label = Label(column_filters, text="Block frames")
+    bf_label = ttk.Label(column_filters, text="Block frames")
     bf_label.pack(side=LEFT)
-    bf_entry = Entry(column_filters, textvariable=bf_filter)
+    bf_entry = ttk.Entry(column_filters, textvariable=bf_filter)
     CreateToolTip(bf_entry, 'Searches for the input in the block frames column.\n'
                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     bf_entry.pack(side=LEFT)
@@ -206,9 +213,9 @@ def make_column_filter_frame(root):
     global hf_filter
     hf_filter = StringVar()
 
-    hf_label = Label(column_filters, text="Hit frames")
+    hf_label = ttk.Label(column_filters, text="Hit frames")
     hf_label.pack(side=LEFT)
-    hf_field = Entry(column_filters, textvariable=hf_filter)
+    hf_field = ttk.Entry(column_filters, textvariable=hf_filter)
     CreateToolTip(hf_field, 'Searches for the input in the hit frames column.\n'
                             'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     hf_field.pack(side=LEFT)
@@ -216,9 +223,9 @@ def make_column_filter_frame(root):
     global chf_filter
     chf_filter = StringVar()
 
-    chf_label = Label(column_filters, text="CH frames")
+    chf_label = ttk.Label(column_filters, text="CH frames")
     chf_label.pack(side=LEFT)
-    chf_entry = Entry(column_filters, textvariable=chf_filter)
+    chf_entry = ttk.Entry(column_filters, textvariable=chf_filter)
     CreateToolTip(chf_entry, 'Searches for the input in the counter hit frames column.\n'
                              'A bare number d gets read as +d or -d, so with + or - to exclude the other.')
     chf_entry.pack(side=LEFT)
@@ -226,19 +233,21 @@ def make_column_filter_frame(root):
     global notes_filter
     notes_filter = StringVar()
 
-    notes_label = Label(column_filters, text="Notes")
+    notes_label = ttk.Label(column_filters, text="Notes")
     notes_label.pack(side=LEFT)
-    notes_entry = Entry(column_filters, textvariable=notes_filter)
+    notes_entry = ttk.Entry(column_filters, textvariable=notes_filter)
     CreateToolTip(notes_entry, 'Searches for the input in the notes column.')
     notes_entry.pack(side=LEFT)
 
     # Filter buttons
-    button_frame = Frame(column_filters)
+    button_frame = ttk.Frame(column_filters)
 
-    clear_filters_button = Button(button_frame, text="Clear filters", underline=1, command=clear_filters)
+    clear_filters_button = ttk.Button(button_frame, text="Clear filters", underline=2, command=clear_filters)
+    CreateToolTip(clear_filters_button, 'Ctrl+L')
     clear_filters_button.pack(side=TOP, ipadx=30, padx=15, pady=2)
 
-    filter_button = Button(button_frame, text="Filter", underline=1, command=filter_data)
+    filter_button = ttk.Button(button_frame, text="Filter", underline=2, command=filter_data)
+    CreateToolTip(filter_button, 'Ctrl+E')
     filter_button.pack(side=TOP, fill=X, ipadx=30, padx=15, pady=2)
 
     # Pack
@@ -247,7 +256,7 @@ def make_column_filter_frame(root):
 
 
 def make_table_frame(root):
-    table_frame = Frame(root)
+    table_frame = ttk.Frame(root)
     table_frame.pack(fill=BOTH, expand=1)
 
     display_df = df
@@ -349,11 +358,10 @@ def main():
     root.bind_all('<Alt-i>', lambda event=None: filter_data())
     root.bind_all('<Control-l>', lambda event=None: clear_filters())
     root.bind_all('<Control-e>', lambda event=None: filter_data())
-    root.bind_all('<Return>', lambda event=None: filter_data())
+    # root.bind_all('<Return>', lambda event=None: filter_data())
     root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(0))
     root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(1))
     root.bind_all('<F1>', lambda event=None: open_legend(root))
-    # TODO(edahl): Make ctrl+s work
     root.bind_all('<Control-s>', lambda event=None: save_movelist)
 
     root.mainloop()
