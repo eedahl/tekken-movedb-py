@@ -236,7 +236,7 @@ def make_column_filter_frame(root):
     notes_label = ttk.Label(column_filters, text="Notes")
     notes_label.pack(side=LEFT)
     notes_entry = ttk.Entry(column_filters, textvariable=notes_filter)
-    CreateToolTip(notes_entry, 'Searches for the input in the notes column.')
+    CreateToolTip(notes_entry, 'Searches for the input in the notes column. Ignores case.')
     notes_entry.pack(side=LEFT)
 
     # Filter buttons
