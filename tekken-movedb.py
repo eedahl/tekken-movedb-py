@@ -122,7 +122,7 @@ def filter_data():
         suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
         bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
         hf = '(?={0})[^0-9]*'.format(re.escape(hf_filter.get()))
-        chf = '(?={0})[^0-9]+'.format(re.escape(chf_filter.get()))
+        chf = '(?={0})[^0-9]*'.format(re.escape(chf_filter.get()))
         notes = '(?={0})'.format(re.escape(notes_filter.get()))
 
         b = ((active_characters[x[CHAR]].get() == 1) and
