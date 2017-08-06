@@ -5,7 +5,10 @@ Keep in mind, this program is *still very much in active development*.
 
 ## Features so far
 * Search through multiple characters at once
-* Filter by command, hit levels, start up frames, block frames, hit frames and counter hit frames
+* Filter by command
+* Filter by beginning of hit levels
+* Filter by start up frames, block frames, hit frames and counter hit frames
+* Filter by  notes
 
 ## In progress
 * A way to save changes.
