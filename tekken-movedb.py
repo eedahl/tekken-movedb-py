@@ -242,11 +242,11 @@ def make_column_filter_frame(root):
     # Filter buttons
     button_frame = ttk.Frame(column_filters)
 
-    clear_filters_button = ttk.Button(button_frame, text="Clear filters", underline=2, command=clear_filters)
+    clear_filters_button = ttk.Button(button_frame, text="Clear filters", underline=1, command=clear_filters)
     CreateToolTip(clear_filters_button, 'Ctrl+L')
     clear_filters_button.pack(side=TOP, ipadx=30, padx=15, pady=2)
 
-    filter_button = ttk.Button(button_frame, text="Filter", underline=2, command=filter_data)
+    filter_button = ttk.Button(button_frame, text="Filter", underline=1, command=filter_data)
     CreateToolTip(filter_button, 'Ctrl+E')
     filter_button.pack(side=TOP, fill=X, ipadx=30, padx=15, pady=2)
 
@@ -286,9 +286,9 @@ def make_character_cascade(menu):
     character_menu = Menu(menu)
     menu.add_cascade(label='Characters', menu=character_menu)
 
-    character_menu.add_command(label='Clear all', underline=1, accelerator='Ctrl+L',
+    character_menu.add_command(label='Clear all', underline=3, accelerator='Alt+E',
                                command=lambda: set_char_buttons(0))
-    character_menu.add_command(label='Check all', underline=3, accelerator='Ctrl+E',
+    character_menu.add_command(label='Check all', underline=3, accelerator='Alt+A',
                                command=lambda: set_char_buttons(1))
     character_menu.add_separator()
 
@@ -355,12 +355,11 @@ def main():
     make_table_frame(root)
 
     # Binds
-    root.bind_all('<Alt-i>', lambda event=None: filter_data())
     root.bind_all('<Control-l>', lambda event=None: clear_filters())
-    root.bind_all('<Control-e>', lambda event=None: filter_data())
+    root.bind_all('<Control-i>', lambda event=None: filter_data())
     # root.bind_all('<Return>', lambda event=None: filter_data())
-    root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(0))
-    root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(1))
+    root.bind_all('<Alt-e>', lambda event=None: set_char_buttons(0))
+    root.bind_all('<Alt-a>', lambda event=None: set_char_buttons(1))
     root.bind_all('<F1>', lambda event=None: open_legend(root))
     root.bind_all('<Control-s>', lambda event=None: save_movelist)
 
