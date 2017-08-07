@@ -130,9 +130,9 @@ def filter_data():
         if not (hl_filter.get() == '' or re.match(hl_filter.get(), row[HL]) is not None):
             return False
 
-        suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
-        if not (suf_filter.get() == '' or re.search(suf, row[SUF]) is not None):
-            return False
+        # suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
+        # if not (suf_filter.get() == '' or re.search(suf, row[SUF]) is not None):
+        #     return False
 
         def compare(char, val1, val2):
             x = int(val1)
@@ -146,32 +146,72 @@ def filter_data():
         # TODO(edahl): add "rest"
         # Query input
         query_pattern = '([<>])?([-+])?(\d+)'
-        res = re.search(query_pattern, bf_filter.get())
+        sgn_num_pattern = '([-+]?\d+)'
+
         b = False
+        res = re.search(query_pattern, suf_filter.get())
         if res:
             # TODO(edahl): edge case res == None
-            op = res.group(1)
-            query_num = res.group(2)+res.group(3)
+            groups = res.groups('')
+            print(groups)
+            op = groups[0]
+            query_num = groups[1]+groups[2]
 
             # Query cell
-            sgn_num_pattern = '([-+]\d+)'
+            res = re.search(sgn_num_pattern, row[SUF])
+            if res:
+                b = compare(op, res.group(0), query_num)
+
+        if not (suf_filter.get() == '' or b):
+            return False
+
+        b = False
+        res = re.search(query_pattern, bf_filter.get())
+        if res:
+            # TODO(edahl): edge case res == None
+            groups = res.groups('')
+            print(groups)
+            op = groups[0]
+            query_num = groups[1]+groups[2]
+
+            # Query cell
             res = re.search(sgn_num_pattern, row[BF])
             if res:
                 b = compare(op, res.group(0), query_num)
 
         if not (bf_filter.get() == '' or b):
             return False
+        
+        b = False
+        res = re.search(query_pattern, hf_filter.get())
+        if res:
+            # TODO(edahl): edge case res == None
+            groups = res.groups('')
+            op = groups[0]
+            query_num = groups[1]+groups[2]
 
-        # bf = '(?={0})[^0-9]*'.format(re.escape(bf_filter.get()))
-        # if not (bf_filter.get() == '' or re.search(bf, row[BF]) is not None):
-        #     return False
+            # Query cell
+            res = re.search(sgn_num_pattern, row[HF])
+            if res:
+                b = compare(op, res.group(0), query_num)
 
-        hf = '(?={0})[^0-9]*'.format(re.escape(hf_filter.get()))
-        if not (hf_filter.get() == '' or re.search(hf, row[HF]) is not None):
+        if not (hf_filter.get() == '' or b):
             return False
+        
+        b = False
+        res = re.search(query_pattern, chf_filter.get())
+        if res:
+            # TODO(edahl): edge case res == None
+            groups = res.groups('')
+            op = groups[0]
+            query_num = groups[1]+groups[2]
 
-        chf = '(?={0})[^0-9]*'.format(re.escape(chf_filter.get()))
-        if not (chf_filter.get() == '' or re.search(chf, row[CHF]) is not None):
+            # Query cell
+            res = re.search(sgn_num_pattern, row[CHF])
+            if res:
+                b = compare(op, res.group(0), query_num)
+
+        if not (chf_filter.get() == '' or b):
             return False
 
         notes = '(?={0})'.format(re.escape(notes_filter.get()))
@@ -236,16 +276,25 @@ def make_column_filter_frame(root):
     texts = ['Command', 'HL', 'SUF', 'BF', 'HF', 'CHF', 'Notes']
     tooltips = ['Matches the input to commands exactly.', 'Matches the input to the beginning of hit levels',
 
-                'Searches for the input in the start up frames column',
+                'Searches for the input in the start up frames column\n\n'
+                'Example: <15 gives moves with SUF less than 15\n\n'
+                'Example: >17 gives moves with SUF greater than 17\n\n'
+                'Example: 15 gives moves with SUF equal to 15',
 
-                'Searches for the input in the block frames column.\n'
-                'A bare number d gets read as +d or -d, so with + or - to exclude the other',
+                'Searches for the input in the block frames column.\n\n'
+                'Example: >-10 gives moves with BF greater than -10\n\n'
+                'Example: <+5 or <5 gives moves with BF less than 5\n\n'
+                'Example: +5 gives moves with BF equal to +5',
 
-                'Searches for the input in the hit frames column.\n'
-                'A bare number d gets read as +d or -d, so with + or - to exclude the other',
+                'Searches for the input in the hit frames column\n\n'
+                'Example: >-10 gives moves with HF greater than -10\n\n'
+                'Example: <-5 or <-5 gives moves with HF less than -5\n\n'
+                'Example: 5 gives moves with HF equal to +5',
 
-                'Searches for the input in the counter hit frames column.\n'
-                'A bare number d gets read as +d or -d, so with + or - to exclude the other',
+                'Searches for the input in the counter hit frames column.\n\n'
+                'Example: >-10 gives moves with CHF greater than -10\n\n'
+                'Example: <+5 or <5 gives moves with CHF less than 5\n\n'
+                'Example: -5 gives moves with BF equal to -5',
 
                 'Searches for the input in the notes column, ignoring case.']
 
