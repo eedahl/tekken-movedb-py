@@ -11,24 +11,12 @@ from tk_ToolTip import CreateToolTip
 # TODO(edahl): Hide/show columns cascade
 # TODO(edahl): Improve SUF, HF, BF, CHF filters
 # TODO(edahl): Highlight safe moves
-# TODO(edahl): Hint for unparryable lows
 # TODO(edahl): Names
 # TODO(edahl): Pet names
-# TODO(edahl): Indicate moves that are not in the in-game movelist
-# TODO(edahl): Add a character size category, to sort the list accordingly,
-# TODO         with regard to character (size) specific combos etc.
-# TODO         E.g., Gigas is max size, Ling is smallest,
-# TODO         Kuma has short legs that fuck up certain combos etc
 # TODO(edahl): Add active frames
 # TODO(edahl): Add recovery frames
-# TODO(edahl): A gif of the move
-# TODO(edahl): A quiz mode, where you see a gif of the move and you have to input the correct frame (dis)advantage
-# TODO(edahl): Show the most commonly used strings/moves and how fast of a punisher is needed to bop it.
 # TODO(edahl): Look into links. SUF < 10+frame (dis)advantage
-# TODO(edahl): Move tracking info, i.e. which direction it tracks
-# TODO(edahl): Throw breaks for characters like King
 # TODO(edahl): Improve the legend
-# TODO(edahl): Add an in-game overlay
 
 
 # #
@@ -116,10 +104,6 @@ def filter_data():
     global df
     global table
 
-    # df.drop('column_name', axis=1, inplace=True)
-    # df.drop(df.columns[[0, 1, 3]], axis=1)
-    # df.drop([Column Name or list],inplace=True,axis=1)
-
     def f(row: pandas.core.series.Series):
         if not active_characters[row[CHAR]].get() == 1:
             return False
@@ -129,10 +113,6 @@ def filter_data():
 
         if not (hl_filter.get() == '' or re.match(hl_filter.get(), row[HL]) is not None):
             return False
-
-        # suf = '(?={0})[^0-9]*'.format(re.escape(suf_filter.get()))
-        # if not (suf_filter.get() == '' or re.search(suf, row[SUF]) is not None):
-        #     return False
 
         def compare(char, val1, val2):
             x = int(val1)
@@ -153,7 +133,6 @@ def filter_data():
         if res:
             # TODO(edahl): edge case res == None
             groups = res.groups('')
-            print(groups)
             op = groups[0]
             query_num = groups[1]+groups[2]
 
@@ -170,7 +149,6 @@ def filter_data():
         if res:
             # TODO(edahl): edge case res == None
             groups = res.groups('')
-            print(groups)
             op = groups[0]
             query_num = groups[1]+groups[2]
 
