@@ -5,7 +5,7 @@ b - tap backwards once         d/b - tap down/back once
 d - tap down once              u/f - tap up/forward once
 u - tap up once                u/b - tap up/back once
 F - hold forward               D/F - hold down/forward
-B - hold back                  D/B - hold down/back
+B - hold back                  D/B - hold down/back     
 D - hold down                  U/F - hold up/forward
 U - hold up                    U/B - hold up/back
 N   - Neutral position (no directional input)
@@ -51,7 +51,9 @@ UBH - Move is unblockable, but hits high and can be evaded by crouching
 
 Additional coventions:
 s    - Opponent recovers crouching
-g    - Guard break (opponent can block, but not attack)
+g    - Guard break. Opponent can block, but not attack
+GB   - Guard break. Opponent is immobalized briefly,
+                    the opponent usually has the offensive advantage
 RC   - Recover crouching after move
 KND  - Opponent is knocked down
 JG   - Move knocks opponent into the air, allowing for additional hits
