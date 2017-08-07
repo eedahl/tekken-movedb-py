@@ -7,11 +7,12 @@ Keep in mind, this program is *still very much in active development*.
 * Search through multiple characters at once
 * Filter by command
 * Filter by beginning of hit levels
-* Filter by start up frames, block frames, hit frames and counter hit frames
+* Filter by start up frames, block frames, hit frames and counter hit frames, e.g.: <+5, >-10, 3, etc.
 * Filter by  notes
 
 ## In progress
-* A way to save changes.
+* Improvement of frame filters to include tokens such as KND
+* A way to save changes
 
 ## Requirements and how to
 You need a Python distribution installed. I use the Anaconda distribution, adding to path when installing.
