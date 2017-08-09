@@ -8,6 +8,8 @@ from pandastable import Table, TableModel
 
 from tk_ToolTip import CreateToolTip
 
+import cProfile
+
 # TODO(edahl): Hide/show columns cascade
 # TODO(edahl): Improve SUF, HF, BF, CHF filters
 # TODO(edahl): Highlight safe moves
@@ -17,7 +19,6 @@ from tk_ToolTip import CreateToolTip
 # TODO(edahl): Add recovery frames
 # TODO(edahl): Look into links. SUF < 10+frame (dis)advantage
 # TODO(edahl): Improve the legend
-
 
 # #
 # GLOBALS
@@ -100,6 +101,67 @@ def save_movelist(move_files, char_names):
 #              search cell for any signed number and compare;
 #              or the result
 #              ... check for other tokens
+def filter_on_number(query, string):
+    query_pattern = '([<>])?([-+]?\d+)'
+    target_pattern = '([-+]?\d+)'
+
+    def compare(char, val1, val2):
+        x = int(val1)
+        y = int(val2)
+        if char == '<':
+            return x < y
+        elif char == '>':
+            return x > y
+        return x == y
+
+    b = False
+    query_res = re.search(query_pattern, query)
+    if query_res:
+        groups = query_res.groups('')
+        operator = groups[0]
+        query_num = groups[1]
+
+        # Query cell
+        target_res = re.search(target_pattern, string)
+        if target_res:
+            b = compare(operator, target_res.group(0), query_num)
+    else:
+        b = True
+
+    return b
+
+
+def filter_on_token(query, string, token):
+    query_pattern = '({0})'.format(re.escape(token))
+    target_pattern = '({0})'.format(re.escape(token))
+
+    def compare(val1, val2):
+        return val1 == val2
+
+    b = False
+    query_res = re.search(query_pattern, query)
+    if query_res:
+        target_res = re.search(target_pattern, string)
+        if target_res:
+            b = compare(target_res.group(0), query_res.group(0))
+    else:
+        b = True
+
+    return b
+
+
+# https://stackoverflow.com/questions/5375624/a-decorator-that-profiles-a-method-call-and-logs-the-profiling-result
+def profileit(func):
+    def wrapper(*args, **kwargs):
+        datafn = func.__name__ + ".profile"  # Name the data file sensibly
+        prof = cProfile.Profile()
+        retval = prof.runcall(func, *args, **kwargs)
+        prof.dump_stats(datafn)
+        return retval
+
+    return wrapper
+
+@profileit
 def filter_data():
     global df
     global table
@@ -108,92 +170,55 @@ def filter_data():
         if not active_characters[row[CHAR]].get() == 1:
             return False
 
-        if not (command_filter.get() == '' or row[CMD] == command_filter.get()):
-            return False
+        filt = command_filter.get()
+        if filt:
+            if not row[CMD] == filt:
+                return False
 
-        if not (hl_filter.get() == '' or re.match(hl_filter.get(), row[HL]) is not None):
-            return False
+        filt = hl_filter.get()
+        if filt:
+            cell = row[HL]
+            #TODO(edahl): debug TC and TJ
+            if not re.match(filt, cell) is not None or \
+                    not filter_on_token(filt, cell, 'TC') or \
+                    not filter_on_token(filt, cell, 'TJ'):
+                return False
 
-        def compare(char, val1, val2):
-            x = int(val1)
-            y = int(val2)
-            if char == '<':
-                return x < y
-            elif char == '>':
-                return x > y
-            return x == y
+        # Query numbers
+        filt = suf_filter.get()
+        if filt:
+            cell = row[SUF]
+            if not filter_on_number(filt, row[SUF]) or \
+                    not filter_on_token(filt, cell, 's') or \
+                    not filter_on_token(filt, cell, 'a'):
+                return False
 
-        # TODO(edahl): add "rest"
-        # Query input
-        query_pattern = '([<>])?([-+])?(\d+)'
-        sgn_num_pattern = '([-+]?\d+)'
+        filt = bf_filter.get()
+        if filt:
+            cell = row[BF]
+            if not filter_on_number(filt, cell) or \
+                    not filter_on_token(filt, cell, 'KND') or \
+                    not filter_on_token(filt, cell, 'CS'):
+                return False
 
-        b = False
-        res = re.search(query_pattern, suf_filter.get())
-        if res:
-            # TODO(edahl): edge case res == None
-            groups = res.groups('')
-            op = groups[0]
-            query_num = groups[1]+groups[2]
+        filt = hf_filter.get()
+        if filt:
+            cell = row[HF]
+            if not filter_on_number(filt, cell) or \
+                    not filter_on_token(filt, cell, 'KND') or \
+                    not filter_on_token(filt, cell, 'CS'):
+                return False
 
-            # Query cell
-            res = re.search(sgn_num_pattern, row[SUF])
-            if res:
-                b = compare(op, res.group(0), query_num)
-
-        if not (suf_filter.get() == '' or b):
-            return False
-
-        b = False
-        res = re.search(query_pattern, bf_filter.get())
-        if res:
-            # TODO(edahl): edge case res == None
-            groups = res.groups('')
-            op = groups[0]
-            query_num = groups[1]+groups[2]
-
-            # Query cell
-            res = re.search(sgn_num_pattern, row[BF])
-            if res:
-                b = compare(op, res.group(0), query_num)
-
-        if not (bf_filter.get() == '' or b):
-            return False
-        
-        b = False
-        res = re.search(query_pattern, hf_filter.get())
-        if res:
-            # TODO(edahl): edge case res == None
-            groups = res.groups('')
-            op = groups[0]
-            query_num = groups[1]+groups[2]
-
-            # Query cell
-            res = re.search(sgn_num_pattern, row[HF])
-            if res:
-                b = compare(op, res.group(0), query_num)
-
-        if not (hf_filter.get() == '' or b):
-            return False
-        
-        b = False
-        res = re.search(query_pattern, chf_filter.get())
-        if res:
-            # TODO(edahl): edge case res == None
-            groups = res.groups('')
-            op = groups[0]
-            query_num = groups[1]+groups[2]
-
-            # Query cell
-            res = re.search(sgn_num_pattern, row[CHF])
-            if res:
-                b = compare(op, res.group(0), query_num)
-
-        if not (chf_filter.get() == '' or b):
-            return False
+        filt = chf_filter.get()
+        if filt:
+            cell = row[CHF]
+            if not filter_on_number(filt, cell) or \
+                    not filter_on_token(filt, cell, 'KND') or \
+                    not filter_on_token(filt, cell, 'CS'):
+                return False
 
         notes = '(?={0})'.format(re.escape(notes_filter.get()))
-        if not (notes_filter.get() == '' or re.search(notes, row[NOTES], re.IGNORECASE) is not None):
+        if not (notes_filter.get() or re.search(notes, row[NOTES], re.IGNORECASE) is not None):
             return False
 
         return True
@@ -275,8 +300,7 @@ def make_column_filter_frame(root):
                 'Example: -5 gives moves with BF equal to -5',
 
                 'Searches for the input in the notes column, ignoring case.']
-
-    assert(len(variables) == len(texts) == len(tooltips))
+    assert (len(variables) == len(texts) == len(tooltips))
 
     column_filters = ttk.Frame(root)
     for v, t, tt in zip(variables, texts, tooltips):
@@ -294,7 +318,7 @@ def make_column_filter_frame(root):
     tooltips = ['Ctrl+E', 'Ctrl+L']
     commands = [lambda: filter_data(), lambda: clear_filters()]
 
-    assert(len(texts) == len(underlines) == len(tooltips) == len(commands))
+    assert (len(texts) == len(underlines) == len(tooltips) == len(commands))
 
     for t, u, tt, c in zip(texts, underlines, tt, commands):
         bt = ttk.Button(button_frame, text=t, underline=u, command=c)
@@ -316,15 +340,15 @@ def make_table_frame(root):
     table = Table(table_frame, fill=BOTH, expand=1, showstatusbar=True, dataframe=display_df)
     table.show()
 
-    # NOTE(edahl): May cause trouble as we begin hiding columns
+    # TODO(edahl): Work out hiding columns
     table.model.columnwidths[CMD] = 200
-    table.model.columnwidths[HL] = 70
-    table.model.columnwidths[SUF] = 70
-    table.model.columnwidths[BF] = 70
-    table.model.columnwidths[HF] = 70
-    table.model.columnwidths[CHF] = 70
-    table.model.columnwidths[DMG] = 70
-    table.model.columnwidths[NOTES] = 450
+    table.model.columnwidths[HL] = 80
+    table.model.columnwidths[SUF] = 80
+    table.model.columnwidths[BF] = 80
+    table.model.columnwidths[HF] = 80
+    table.model.columnwidths[CHF] = 80
+    table.model.columnwidths[DMG] = 80
+    table.model.columnwidths[NOTES] = 400
 
 
 def set_char_buttons(val):
