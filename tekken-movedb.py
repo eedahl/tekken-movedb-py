@@ -10,6 +10,8 @@ from tk_ToolTip import CreateToolTip
 
 import cProfile
 
+from legend import open_legend
+
 # TODO(edahl): Hide/show columns cascade
 # TODO(edahl): Improve SUF, HF, BF, CHF filters
 # TODO(edahl): Highlight safe moves
@@ -46,14 +48,6 @@ NOTES = 'Notes'
 
 # Filters
 active_characters = dict()
-
-command_filter = None
-hl_filter = None
-suf_filter = None
-bf_filter = None
-hf_filter = None
-chf_filter = None
-notes_filter = None
 
 
 def load_moves_by_filename(filename):
@@ -95,12 +89,7 @@ def save_movelist(move_files, char_names):
             json.dump(data, outfile, indent=4, separators=(',', ': '))
 
 
-# TODO(edahl): improvements to frame filters
-#              search input for < or >;
-#              check if followed by a signed number;
-#              search cell for any signed number and compare;
-#              or the result
-#              ... check for other tokens
+# TODO(edahl): robustly check for other tokens
 def filter_on_number(query, string):
     query_pattern = '([<>])?([-+]?\d+)'
     target_pattern = '([-+]?\d+)'
@@ -151,6 +140,7 @@ def filter_on_token(query, string, token):
 
 
 # https://stackoverflow.com/questions/5375624/a-decorator-that-profiles-a-method-call-and-logs-the-profiling-result
+# Run profile files with snakeviz
 def profileit(func):
     def wrapper(*args, **kwargs):
         datafn = func.__name__ + ".profile"  # Name the data file sensibly
@@ -160,6 +150,7 @@ def profileit(func):
         return retval
 
     return wrapper
+
 
 @profileit
 def filter_data():
@@ -179,7 +170,7 @@ def filter_data():
         if filt:
             cell = row[HL]
             #TODO(edahl): debug TC and TJ
-            if not re.match(filt, cell) is not None or \
+            if not re.match(filt, cell) or \
                     not filter_on_token(filt, cell, 'TC') or \
                     not filter_on_token(filt, cell, 'TJ'):
                 return False
@@ -239,22 +230,6 @@ def clear_filters():
     bf_filter.set('')
     hf_filter.set('')
     chf_filter.set('')
-
-
-def open_legend(root):
-    window = Toplevel(root)
-
-    if getattr(sys, 'frozen', False):
-        script_dir = os.path.dirname(sys.executable)
-    else:
-        script_dir = os.path.dirname(os.path.realpath(__file__))
-
-    file_path = os.path.join(script_dir, 'legend.txt')
-
-    with open(file_path, 'r') as legend_file:
-        legend = legend_file.read()
-
-    Message(window, text=legend, font='Consolas', padx=10, pady=10).pack()
 
 
 def make_column_filter_frame(root):
