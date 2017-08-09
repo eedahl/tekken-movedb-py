@@ -3,6 +3,8 @@ A Tekken 7 move database. Likely to become a web app when more fully fleshed out
 
 Keep in mind, this program is *still very much in active development*.
 
+![git](https://user-images.githubusercontent.com/19252374/29139547-9c495706-7d47-11e7-9636-b233bc051b18.png)
+
 ## Features so far
 * Search through multiple characters at once
 * Filter by command
